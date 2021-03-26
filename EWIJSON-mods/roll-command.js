@@ -19,7 +19,7 @@ if (state.commandList.roll) {
         name: 'roll',
         description: "Rolls dice",
         args: true,
-        usage: 'A term can be a dice term such as 2d6 or a constant such as 3. An operation can be +/-. Use: 1d6 + 1d3 - 2',
+        usage: 'Alternate between a dice term e.g. 1d6 or a constant e.g. 3 and a +/- operator, separated by spaces. Such as: 1d6 + 3 and 2d6 + 1d4. These terms are unlimited.',
         execute: (args) => {
             let accumulator = 0;
             let op = "+";
