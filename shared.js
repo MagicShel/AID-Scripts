@@ -4,17 +4,17 @@
 const commandRegEx = /^(?:\/|> You \/|> You say "\/)(.*)/gi;
 
 const plugins = [];
-const commands = []
+const commands = [];
 const registerPlugin = (plugin) => plugins.push(plugin);
 const registerCommand = (cmd, p) => commands.push( {command: cmd, plugin: p} );
 
-const runInputCommand = (text) => {
+const execInputCommand = (text) => {
     let result = commandRegEx.exec(text);
     if (result && result[0]) {
         let args = result[0].replace(/"\n$|.\n$/, '').split(/ +/);
         let command = args.shift().replace(/\W*/gi, '');
         let c = commands.find(cmd => cmd.command == command);
-        if (c) return c.plugin.inputModifier(args);
+        if (c && c.plugin.execCommand) return c.plugin.execCommand(args);
     }
     return text;
 }
@@ -22,9 +22,9 @@ const runInputCommand = (text) => {
 const processInput = (text) => {
     let modifiedText = text;
     state.message = "";
-    modifiedText = runInputCommand(text);
+    modifiedText = execInputCommand(text);
     for (let plugin of plugins) {
-        if(modifiedText) { modifiedText = plugin.inputModifier ? plugin.inputModifier(modifiedText) : modifiedText; }
+        if(modifiedTex && plugin.inputModifier) { modifiedText = plugin.inputModifier ? plugin.inputModifier(modifiedText) : modifiedText; }
     }
     if (modifiedText) {
         return { text: modifiedText };
@@ -38,7 +38,7 @@ const processContext = (text) => {
     state.message = "";
     if (plugins) {
         for (let plugin of plugins) {
-            if(modifiedText) { modifiedText = plugin.contextModifier ? plugin.contextModifier(modifiedText) : modifiedText; }
+            if(modifiedText && plugin.contextModifier) { modifiedText = plugin.contextModifier ? plugin.contextModifier(modifiedText) : modifiedText; }
         }
     }
     if (modifiedText) {
@@ -47,14 +47,13 @@ const processContext = (text) => {
         return { stop: true };
     }
 }
+
 const processOutput = (text) => {
     let modifiedText = text;
     state.message = "";
     if (plugins) {
         for (let plugin of plugins) {
-            if (modifiedText) {
-                modifiedText = plugin.contextModifier ? plugin.outputModifier(modifiedText) : modifiedText;
-            }
+            if (modifiedText && plugin.outputModifier) modifiedText = plugin.contextModifier ? plugin.outputModifier(modifiedText) : modifiedText;
         }
     }
     if (modifiedText) {
@@ -62,19 +61,12 @@ const processOutput = (text) => {
     } else {
         return { stop: true };
     }
-
 }
+
 const beginInput = () => {
-    state.continue = true;
     state.message = "";
 }
-const submitInput = (submitText) => {
-    if (!submitText || state.continue == false) {
-        return { stop: true };
-    }
-    return { text: submitText };
-}
-const submitPrevent = () => state.continue = false;
+
 const appendMessage = (text) => {
     if (state.message && state.message.length > 0) {
         state.message = `${state.message}\n${text}`;
@@ -108,7 +100,7 @@ const dicePlugin = {
         }
         return acc;
     },
-    inputModifier: (args) => {
+    execCommand: (args) => {
         let accumulator = 0;
         let op = "+";
         for (let idx = 0; idx < args.length; idx++) {
