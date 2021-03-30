@@ -723,50 +723,64 @@
   {
     "id": "0.08532950098419079",
     "keys": "Excellent Strike#[l=3]",
-    "entry": "[< Charm:Excellent Strike≔ A very accurate attack. {Solar, Abyssal, Lunar,Sidereal,Terrestrial}>]",
+    "entry": "[< Charm:Excellent Strike≔ A very accurate attack. {Solar, Abyssal, Lunar,Sidereal,Terrestrial; Melee}>]",
     "hidden": true,
     "worldInfoId": "3430762"
   },
   {
     "id": "0.7761985071027875",
     "keys": "Fire and Stone Strike#[l=3]",
-    "entry": "[< Charm:Fire and Stone Strike≔ An attack that channels essence into fire through a melee weapon. {Solar}>]",
+    "entry": "[< Charm:Fire and Stone Strike≔ An attack that channels essence into fire through a melee weapon. {Solar; Melee}>]",
     "hidden": true,
     "worldInfoId": "3430763"
   },
   {
     "id": "0.38509766579259075",
     "keys": "Peony Blossom Attack#[l=3]",
-    "entry": "[< Charm:Peony Blossom Attack≔ Instant additional attack. {Solar}>]",
+    "entry": "[< Charm:Peony Blossom Attack≔ Instant additional attack. {Solar; Melee}>]",
     "hidden": true,
     "worldInfoId": "3433392"
   },
   {
     "id": "0.03202110468967556",
-    "keys": "Dipping Swallow Defense#[l=3]",
-    "entry": "[< Charm:Dipping Swallow Defense≔ Very powerful parry. {Solar}>]",
+    "keys": "(parry|Dipping Swallow Defense)#[l=3]",
+    "entry": "[< Charm:Dipping Swallow Defense≔ Very powerful parry. {Solar; Melee}>]",
     "hidden": true,
     "worldInfoId": "3437992"
   },
   {
     "id": "0.30963940999633666",
-    "keys": "Bulwark Stance#[l=3]",
-    "entry": "[< Charm:Bulwark Stance≔ For a single turn, you attempt a parry and reduce the damage of all incoming attacks. {Solar}>]",
+    "keys": "(parry|Bulwark Stance)#[l=3]",
+    "entry": "[< Charm:Bulwark Stance≔ For a single turn, you attempt a parry and reduce the damage of all incoming attacks. {Solar; Melee}>]",
     "hidden": true,
     "worldInfoId": "3440160"
   },
   {
     "id": "0.788378210451364",
-    "keys": "War Lion Stance#[l=6S=10]",
-    "entry": "[< Charm:War Lion Stance≔ You choose another person then for the rest of combat you can attempt to parry any attacks directed at that person. {Solar}>]",
+    "keys": "(parry|War Lion Stance)#[l=6S=10]",
+    "entry": "[< Charm:War Lion Stance≔ You choose another person then for the rest of combat you can attempt to parry any attacks directed at that person. {Solar; Melee}>]",
     "hidden": true,
     "worldInfoId": "3443920"
   },
   {
     "id": "0.9055918704297083",
-    "keys": "Guard-Breaking Technique#[l=3]",
-    "entry": "[< Charm:Guard-Breaking Technique≔ Execute a feint and then strike a powerful blow. {Solar}>]",
+    "keys": "(feint|Guard-Breaking Technique)#[l=3]",
+    "entry": "[< Charm:Guard-Breaking Technique≔ Execute a feint and then strike a powerful blow. {Solar; Melee}>]",
     "hidden": true,
     "worldInfoId": "3446778"
+  },
+  {
+    "id": "0.3217155825071586",
+    "keys": "Counterattack#[l=3]",
+    "entry": "[< Charm:Solar Counterattack≔ When parrying, the Exalt may launch an immediate counterattack before any damage is sustained. This counterattack does not prevent damage from the incoming attack. {Solar; Melee}>]",
+    "hidden": true,
+    "worldInfoId": "3475382"
+  },
+  {
+    "id": "0.7563628328527875",
+    "keys": "(strike|Rising Sun Slash)#[l=3]",
+    "entry": "[< Charm: Rising Sun Slash≔ A powerful leaping attack which channels an inexorable flow of Essence through the weapon, greatly boosting the speed and ferocity of the attack. {Solar; Melee}>]",
+    "hidden": true,
+    "worldInfoId": "3478923"
   }
 ]
