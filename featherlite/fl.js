@@ -25,9 +25,9 @@ if ( cmpTokensStart(["1","2","3"],["1","3"]) ) throw 'cmpTokensStart fail unmatc
 if ( !cmpTokens ( tokenizePhrase("< 'do this' test >"),["<","'do this'","test",">"] ) ) throw 'tokenizePhrase fail';
 if ( !cmpTokens ( tokenizeWord('tokenize'),["token","ize"] ) ) throw 'tokenizeWord fail';
 
-let input = process.argv.slice(2).join(' ');
-let phrase = "";
-if (input) {
+const minFl = (input) => {
+	if (!input) throw 'Input missing'
+	let phrase = "";
 	phraseTokens = tokenizePhrase(input);
 	for (let pToken of phraseTokens) {
 		let term;
@@ -39,8 +39,8 @@ if (input) {
 			let term1 = tokenizeWord(l_term(pToken)).length < tokenizeWord(lterm(pToken)).length ? l_term(pToken) : pToken;
 			let term2 = tokenizeWord(u_term(pToken)).length < tokenizeWord(uterm(pToken)).length ? u_term(pToken) : uterm(pToken);
 			term = tokenizeWord(term2).length < tokenizeWord(term1).length ? term2 : term1;
-		} else if ( pToken.match( /^≡/g ) ) {
-			term = ' ≡';
+		} else if ( pToken.match( /[\W]+/g) ) {
+			term = tokenizeWord(" " + pToken).length < tokenizeWord(pToken).length ? " " + pToken : pToken;
 		} else {
 			term = pToken;
 		}
@@ -60,5 +60,11 @@ if (input) {
 			phrase += term;
 		}
 	}
+	return phrase;
 }
-console.log(phrase);
+
+let input = process.argv.slice(2).join(' ');
+let output = minFl(input);
+let count = tokenizeWord(output).length;
+console.log(output);
+console.log(`Tokens: ${count}`)
