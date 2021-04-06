@@ -708,7 +708,7 @@
   },
   {
     "id": "0.9531409460156443",
-    "keys": "(charm|magic|essence,flare),(anima|aura)#[l=5]",
+    "keys": "(charm|magic|essence|flare),(anima|aura)#[l=5]",
     "entry": "[<Exalt uses Essence⇒ anima{flares,visible}; more essence⇒ larger display>]\n[<Solar⇒ white or gold; Abyssal⇒ blackish-purple glow; Lunar⇒ silver animal shape; Dragon-Blood⇒ aspect element>]",
     "hidden": true,
     "worldInfoId": "3381942"
