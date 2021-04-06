@@ -7,7 +7,8 @@ Featherlite is a compressed form of caveman/futureman described by Rinter. It ta
 - Lowercase words will be converted to uppercase if it results in greater compression
 
 ### Usage
-`node fl "< Stuff you want to minimize >"
+- `node fl "< Stuff you want to minimize >"`
+- `node fl --file \<path to file\>`
 
 ## Known Issues
 - Maximum compression is a good start, but you may need to tweak things manually and add a little separation back in for best WI results.

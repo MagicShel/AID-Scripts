@@ -1,4 +1,5 @@
-const {encode, decode} = require('gpt-3-encoder');
+const { encode, decode } = require('gpt-3-encoder');
+const { readFile, writeFile } = require('fs');
 
 const fl = {
 	lterm: (s) => s.charAt(0).toLowerCase() + s.slice(1),
@@ -67,7 +68,30 @@ if ( !fl.cmpTokens ( fl.tokenize('tokenize'),["token","ize"] ) ) throw 'tokenize
 
 // Execution
 let input = process.argv.slice(2).join(' ');
-let output = fl.smash(input);
-let count = fl.tokenize(output).length;
-console.log(output);
-console.log(`Tokens: ${count}`)
+let fileRegEx = /^(?:-f|--file)\s(.*)/;
+let matches = input.match(fileRegEx);
+if ( matches && matches[1]) { // Process file
+	readFile(matches[1], 'utf8', (err, data) => {
+		if (err) {
+			console.error(err);
+			return;
+		}
+		let count = 0;
+		const worldEntries = JSON.parse(data);
+		console.log(`worldEntries count: ${worldEntries.length}`)
+		console.log(`worldEntries match: ${worldEntries.filter(e => !e.hidden).length}`);
+		let foo = worldEntries.filter(e => !e.hidden).map(e => e.entry);
+		worldEntries.filter(e => !e.hidden).forEach(e => {e.entry = fl.smash(e.entry); count++});
+		let fileName = matches[1].split(".json")[0]+".fl.json";
+		writeFile(fileName, JSON.stringify(worldEntries), 'utf8', (err) => {
+			console.error(err);
+			return;
+		})
+		console.log(`worldEntries updated: ${count}`);
+	});
+} else { // Process input
+	let output = fl.smash(input);
+	let count = fl.tokenize(output).length;
+	console.log(output);
+	console.log(`Tokens: ${count}`);
+}
