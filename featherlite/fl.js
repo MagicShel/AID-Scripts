@@ -9,7 +9,7 @@ const fl = {
 	cmpTokens: (a,b) => { if ( a.length != b.length ) return false; for ( let i=0; i<a.length; i++ ){ if ( a[i].trim().toLowerCase() != b[i].trim().toLowerCase() ) return false; } return true; },
 	cmpStartTokens: (f,p) => { if ( f.length < p.length ) throw 'Terms out of order'; for ( let i=0; i<p.length; i++){ if (f[i].trim().toLowerCase() != p[i].trim().toLowerCase() ) return false; } return true; },
 	tokenizeRegEx: /('[\w\s]+'|\w+|[^\w^\s]+?)/g,
-	skipRegEx: /^'.*'/g,
+	skipRegEx: /^['"].*['"]/g,
 	upperRegEx: /^[A-Z]\w+/g,
 	lowerRegEx: /^[a-z]\w+/g,
 	symbolRegEx: /[\W]+/g,
@@ -76,18 +76,30 @@ if ( matches && matches[1]) { // Process file
 			console.error(err);
 			return;
 		}
-		let count = 0;
+		let countUpdated = 0;
+		let countCharsOld = 0;
+		let countCharsNew = 0;
+		let countTokensOld = 0;
+		let countTokensNew = 0;
 		const worldEntries = JSON.parse(data);
 		console.log(`worldEntries count: ${worldEntries.length}`)
 		console.log(`worldEntries match: ${worldEntries.filter(e => !e.hidden).length}`);
 		let foo = worldEntries.filter(e => !e.hidden).map(e => e.entry);
-		worldEntries.filter(e => !e.hidden).forEach(e => {e.entry = fl.smash(e.entry); count++});
+		worldEntries.filter(e => !e.hidden).forEach(e => {
+			countCharsOld += e.entry.length;
+			countTokensOld += fl.tokenize(e.entry).length;
+			e.entry = fl.smash(e.entry); countUpdated++
+			countCharsNew += e.entry.length;
+			countTokensNew += fl.tokenize(e.entry).length;
+		});
 		let fileName = matches[1].split(".json")[0]+".fl.json";
 		writeFile(fileName, JSON.stringify(worldEntries), 'utf8', (err) => {
 			console.error(err);
 			return;
 		})
-		console.log(`worldEntries updated: ${count}`);
+		console.log(`worldEntries updated: ${countUpdated}`);
+		console.log(`characters old/new: ${countCharsOld}/${countCharsNew}`);
+		console.log(`tokens old/new: ${countTokensOld}/${countTokensNew}`);
 	});
 } else { // Process input
 	let output = fl.smash(input);
