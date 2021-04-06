@@ -87,8 +87,6 @@ const appendMessage = (text) => {
 
 /* Paste Plugins Here */
 
-/* End Plugins */
-
 /*
  * Utilities
  */
@@ -149,6 +147,8 @@ const dicePlugin = {
     }
 };
 /* End Dice Roller */
+
+/* End Plugins */
 
 /* Register commands in process order */
 registerCommand("roll",dicePlugin);
