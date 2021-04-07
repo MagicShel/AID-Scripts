@@ -1,0 +1,240 @@
+[
+  {
+    "id": "0.8322264821540465",
+    "hidden": false,
+    "keys": "(ascension)#[l=3t=9]",
+    "entry": "<< ascension ≡ enlightenment of self and enlightenment of humanity>>>>",
+    "worldInfoId": "199700551"
+  },
+  {
+    "id": "0.3049725139789159",
+    "hidden": false,
+    "keys": "(awake|mage|tradition|technocra)#[l=3t=9]",
+    "entry": "<< awakened ≡ technocrats and tradition mages>>>>",
+    "worldInfoId": "199700552"
+  },
+  {
+    "id": "0.8275127872004239",
+    "hidden": false,
+    "keys": "(sleeper)#[l=3t=9x=3]",
+    "entry": "<< sleeper ≡non-mage>>>>",
+    "worldInfoId": "199700554"
+  },
+  {
+    "id": "0.09769516702141134",
+    "hidden": false,
+    "keys": "(technocrac|convention)#[l=3t=9x=3]",
+    "entry": "<< technocracy ≡ union of science based mage conventions magic through science their goal conceal magic eliminate tradition mages>>>>",
+    "worldInfoId": "199700555"
+  },
+  {
+    "id": "0.7400268251035385",
+    "hidden": false,
+    "keys": "(marauder)#[l=3t=9]",
+    "entry": "<< marauder ≡ insane mage>>>>",
+    "worldInfoId": "199700553"
+  },
+  {
+    "id": "0.6660483179243046",
+    "hidden": false,
+    "keys": "(nephandi|fallen one)#[l=3t=9]",
+    "entry": "<< nephandi AKA fallen one ≡ corrupted servant of nightmares>>>>",
+    "worldInfoId": "199700556"
+  },
+  {
+    "id": "0.8023126746686965",
+    "hidden": false,
+    "keys": "(reality|tellurian)#[l=3t=9]",
+    "entry": "<< tellurian ≡ reality physical dream spiritual possible>>>>",
+    "worldInfoId": "199700557"
+  },
+  {
+    "id": "0.4512352878327519",
+    "hidden": false,
+    "keys": "(chantry)#[l=3t=9]",
+    "entry": "<< chantry ≡safe house for mages>>>>",
+    "worldInfoId": "199700558"
+  },
+  {
+    "id": "0.7038559099203672",
+    "hidden": false,
+    "keys": "(quint)#[l=3t=9x=5]",
+    "entry": "<< quintessence ≡ magical resource fuels magic >>>>",
+    "worldInfoId": "199700559"
+  },
+  {
+    "id": "0.172204478382607",
+    "hidden": false,
+    "keys": "(sanctum)#[l=3t=9]",
+    "entry": "<< sanctum ≡ personal retreat pocket reality>>>>",
+    "worldInfoId": "199700560"
+  },
+  {
+    "id": "0.5604158155495489",
+    "hidden": false,
+    "keys": "(gauntlet|umbra|astral)#[l=3t=9x=2]",
+    "entry": "<< gauntlet ≡ barrier between physical astral>>>>",
+    "worldInfoId": "199700561"
+  },
+  {
+    "id": "0.9088599301247848",
+    "hidden": false,
+    "keys": "(acolyte)#[l=3t=9x=2]",
+    "entry": "<< acolyte ≡ non-mage servant of mage believes magic>>>>",
+    "worldInfoId": "199700562"
+  },
+  {
+    "id": "0.4068183328755194",
+    "hidden": false,
+    "keys": "(arcane|investiga|camera|database)#[l=3t=9x=3]",
+    "entry": "<< arcane ≡ imbues mages subconscious cloaking untraceable>>>>",
+    "worldInfoId": "199700563"
+  },
+  {
+    "id": "0.5303200197732012",
+    "hidden": false,
+    "keys": "(avatar|eidolon)#[l=3t=9x=3]",
+    "entry": "<< avatar AKA eidolon ≡ sentient spirit shard entangled human soul enables magic>>>>",
+    "worldInfoId": "199700564"
+  },
+  {
+    "id": "0.48482624728555146",
+    "hidden": false,
+    "keys": "(coincidental)#[l=3t=9x=5]",
+    "entry": "<< coincidental magic ≡ plausible cloaked magic>>>>",
+    "worldInfoId": "199700565"
+  },
+  {
+    "id": "0.6556645351607828",
+    "hidden": false,
+    "keys": "(vulgar|obvious)#[l=3t=9x=5]",
+    "entry": "<< vulgar magic ≡ obvious magic with consequences>>>>",
+    "worldInfoId": "199700566"
+  },
+  {
+    "id": "0.4985572114782909",
+    "hidden": false,
+    "keys": "(convention|iteration x|new world order|nwo|progenitor|syndicate|void engineer)#[l=3t=9x=8]",
+    "entry": "<< 5 conventions ≡ 1 Syndicate| 2 'Iteration X'| 3 'New World Order'| 4 Progenitors| 5 'Void Engineers'>>>>",
+    "worldInfoId": "199700567"
+  },
+  {
+    "id": "0.876865767980603",
+    "hidden": false,
+    "keys": "(tradition|euthanatos|adept|akashic|chorus|ecsta|dreamspeaker|herme|ether|verbena)#[l=3t=9x=3]",
+    "entry": "<< 7 traditions ≡ 1 Euthanatos | 2 'Virtual Adepts' | 3 'Akashic Brotherhood' | 4 'Celestial Chorus' | 5 'Cult of Ecstasy' | 6 'Order of Hermes' | 7 Verbena >>>>",
+    "worldInfoId": "199700568"
+  },
+  {
+    "id": "0.1561047986424372",
+    "hidden": false,
+    "keys": " #[p=11]",
+    "entry": "<< casting magic requires flourish using gadget/gesture/item/act/phrase/song/music >>>>",
+    "worldInfoId": "199700569"
+  },
+  {
+    "id": "0.5205953322178277",
+    "hidden": false,
+    "keys": "(sphere)#[l=3t=9]",
+    "entry": "<<7 spheres of magical control ≡ 1 Connection | 2 Entropy | 3 Energy | 4 Life | 5 Matter | 6 Mind | 7 Time >>>>",
+    "worldInfoId": "199700570"
+  },
+  {
+    "id": "0.937102840076153",
+    "hidden": false,
+    "keys": "(euthanatos)#[l=3t=9]",
+    "entry": "<< Euthanatos ≡ assassin/death/chaos tradition mage primary sphere entropy>>>>",
+    "worldInfoId": "199700571"
+  },
+  {
+    "id": "0.7486996516814187",
+    "keys": "(ecsta)#[l=3t=9]",
+    "entry": "<< Cult of Ecstasy ≡ member of 'Cult of Ecstasy' tantric/transcendent/musican/altered state tradition mage primary sphere time >>>>",
+    "hidden": false,
+    "worldInfoId": "199719276"
+  },
+  {
+    "id": "0.477572532000902",
+    "keys": "(choi?rus)#[l=3t=9]",
+    "entry": "<< choirister ≡ member of 'Celestial Chorus' Abrahamic/religious tradition mage primary sphere matter >>>>",
+    "hidden": false,
+    "worldInfoId": "199720347"
+  },
+  {
+    "id": "0.33910263009907715",
+    "hidden": false,
+    "keys": "(akashic)#[l=3t=9]",
+    "entry": "<< Akashic ≡ member 'Akashic Brotherhood' martial artist/monk/ascetic tradition mage primary sphere mind>>>>",
+    "worldInfoId": "199700572"
+  },
+  {
+    "id": "0.14729679202838963",
+    "hidden": false,
+    "keys": "(herme)=[l=3t=9]",
+    "entry": "<< hermetic ≡ member 'Order of Hermes' occultist/achemist/prescriptive tradition mage primary sphere energy >>>>",
+    "worldInfoId": "199700573"
+  },
+  {
+    "id": "0.24896963621464918",
+    "hidden": false,
+    "keys": "(verbena)#[l=3t=9]",
+    "entry": "<< Verbena ≡ wiccan/naturist/shamanic tradition mage primary sphere life >>>>",
+    "worldInfoId": "199700574"
+  },
+  {
+    "id": "0.6067893131810161",
+    "keys": "(virtual adept)#[l=3t=9]",
+    "entry": "<< Virtual Adept ≡ reality hacker/gadgeteer tradition mage primary sphere connection >>>>",
+    "hidden": false,
+    "worldInfoId": "199700575"
+  },
+  {
+    "id": "0.5582524757890339",
+    "keys": "(connection|virtual adept|sphere)#[l=3t=9x=6]",
+    "entry": "<< connection ≡ sphere grants powers conjuration/distortion/scrying/teleportation/warding >>>>",
+    "hidden": false,
+    "worldInfoId": "199710078"
+  },
+  {
+    "id": "0.7546161617980836",
+    "keys": "(entropy|euthanatos|sphere)#[l=3t=9x=6]",
+    "entry": "<< entropy ≡ sphere grants powers chaos/dissolution/fate/fortune/order >>>>",
+    "hidden": false,
+    "worldInfoId": "199710079"
+  },
+  {
+    "id": "0.15487299857586956",
+    "keys": "(energy|herme|sphere)#[l=3t=9x=6]",
+    "entry": "<< energy ≡ sphere grants powers motion/fire/lightning/radiance/cold/physics/technology/weather >>>>",
+    "hidden": false,
+    "worldInfoId": "199710550"
+  },
+  {
+    "id": "0.6752627555968002",
+    "keys": "(life|verbena|sphere)#[l=3t=9x=6]",
+    "entry": "<< life ≡ sphere grants powers cloning/creation/disease/evolution/healing/improvement/shapeshifting/wounding >>>>",
+    "hidden": false,
+    "worldInfoId": "199711156"
+  },
+  {
+    "id": "0.3186839595742682",
+    "keys": "(mind|akashic|sphere)#[l=3t=9x=6]",
+    "entry": "<< mind ≡ sphere grants powers astral travel/communication/illusion/mind-shielding/self-empowerment >>>>",
+    "hidden": false,
+    "worldInfoId": "199712282"
+  },
+  {
+    "id": "0.8406179398678045",
+    "keys": "(time|ecsta|sphere)#[l=3t=9x=6]",
+    "entry": "<< time ≡ sphere grants powers timelines/divination/time manipulation/travel >>>>",
+    "hidden": false,
+    "worldInfoId": "199713279"
+  },
+  {
+    "id": "0.9248153762176773",
+    "keys": "(matter|choi?rus|sphere)#[l=3t=9x=6]",
+    "entry": "<< matter ≡ sphere grants powers patterns/conjuration/shaping/transmutation >>>>",
+    "hidden": false,
+    "worldInfoId": "199722986"
+  }
+]
