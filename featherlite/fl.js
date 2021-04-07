@@ -6,7 +6,6 @@ const fl = {
 	uterm: (s) => s.charAt(0).toUpperCase() + s.slice(1),
 	l_term: (s) => " " + fl.lterm(s),
 	u_term: (s) => " " + fl.uterm(s),
-	cmpTokens: (a,b) => { if ( a.length != b.length ) return false; for ( let i=0; i<a.length; i++ ){ if ( a[i].trim().toLowerCase() != b[i].trim().toLowerCase() ) return false; } return true; },
 	cmpStartTokens: (f,p) => { if ( f.length < p.length ) throw 'Terms out of order'; for ( let i=0; i<p.length; i++){ if (f[i].trim().toLowerCase() != p[i].trim().toLowerCase() ) return false; } return true; },
 	tokenizeRegEx: /('[\w\s]+'|\w+|[^\w^\s]+?)/g,
 	skipRegEx: /^['"].*['"]/g,
@@ -55,16 +54,17 @@ const fl = {
 }
 
 // Testing functionality
+const cmpTokens = (a,b) => { if ( a.length != b.length ) return false; for ( let i=0; i<a.length; i++ ){ if ( a[i].trim().toLowerCase() != b[i].trim().toLowerCase() ) return false; } return true; }
 if ( fl.lterm("Hello") !== "hello" ) throw 'lterm fail';
 if ( fl.uterm("hello") !== "Hello" ) throw 'uterm fail';
 if ( fl.l_term("hello") !== " hello" ) throw 'l_term fail';
 if ( fl.u_term("hello") !== " Hello" ) throw 'u_term fail';
-if ( !fl.cmpTokens(["1","2","3"],["1","2","3"]) ) throw 'cmpTokens fail matched';
-if ( fl.cmpTokens(["1","2","3"],["1","2","4"]) ) throw 'cmpTokens fail unmatched';
+if ( !cmpTokens(["1","2","3"],["1","2","3"]) ) throw 'cmpTokens fail matched';
+if ( cmpTokens(["1","2","3"],["1","2","4"]) ) throw 'cmpTokens fail unmatched';
 if ( !fl.cmpStartTokens(["1","2","3"],["1","2"]) ) throw 'cmpStartTokens fail matched';
 if ( fl.cmpStartTokens(["1","2","3"],["1","3"]) ) throw 'cmpStartTokens fail unmatched';
-if ( !fl.cmpTokens ( fl.tokenizeInput("< 'do this' test >"),["<","'do this'","test",">"] ) ) throw 'tokenizeInput fail';
-if ( !fl.cmpTokens ( fl.tokenize('tokenize'),["token","ize"] ) ) throw 'tokenize fail';
+if ( !cmpTokens ( fl.tokenizeInput("< 'do this' test >"),["<","'do this'","test",">"] ) ) throw 'tokenizeInput fail';
+if ( !cmpTokens ( fl.tokenize('tokenize'),["token","ize"] ) ) throw 'tokenize fail';
 
 // Execution
 let input = process.argv.slice(2).join(' ');

@@ -1,4 +1,5 @@
 # Featherlite
+See: https://github.com/RinterWaptor/AID-research/wiki/Featherlite
 
 ## Summary
 Featherlite is a compressed form of caveman/futureman described by Rinter. It takes an existing WI without words mashed together and compresses them into the tightest possible format for optimum tokenization.
