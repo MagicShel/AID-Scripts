@@ -89,6 +89,7 @@ if ( matches && matches[1]) { // Process file
 			countCharsOld += e.entry.length;
 			countTokensOld += fl.tokenize(e.entry).length;
 			e.entry = fl.smash(e.entry); countUpdated++
+			e.hidden = true;
 			countCharsNew += e.entry.length;
 			countTokensNew += fl.tokenize(e.entry).length;
 		});
