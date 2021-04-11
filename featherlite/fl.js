@@ -7,6 +7,7 @@ const fl = {
 	l_term: (s) => " " + fl.lterm(s),
 	u_term: (s) => " " + fl.uterm(s),
 	cmpStartTokens: (f,p) => { if ( f.length < p.length ) throw 'Terms out of order'; for ( let i=0; i<p.length; i++){ if (f[i].trim().toLowerCase() != p[i].trim().toLowerCase() ) return false; } return true; },
+	fewestTokens: (a,b) => fl.tokenize(a).length <= fl.tokenize(b) ? a : b,
 	tokenizeRegEx: /('[\w\s]+'|\w+|[^\w^\s]+?)/g,
 	skipRegEx: /^['"].*['"]/g,
 	upperRegEx: /^[A-Z]\w+/g,
@@ -36,12 +37,12 @@ const fl = {
 			if (!phrase) {
 				phrase = term;
 			} else if ( term.match( fl.upperRegEx )  ) {
-				phrase += fl.cmpStartTokens(fl.tokenize(phrase+term),fl.tokenize(phrase)) ? term : fl.l_term(term);
+				phrase += fl.cmpStartTokens(fl.tokenize(phrase+term),fl.tokenize(phrase)) ? term : fl.u_term(term);
 			} else if ( term.match( fl.lowerRegEx ) ) {
-				if ( fl.cmpStartTokens(fl.tokenize(phrase+term),fl.tokenize(phrase)) ) {
+				if ( fl.cmpStartTokens(fl.tokenize(phrase+term),fl.tokenize(phrase))) {
 					phrase += term;
 				} else if ( fl.cmpStartTokens(fl.tokenize(phrase+fl.uterm(term)),fl.tokenize(phrase)) ) {
-					phrase += fl. uterm(term);
+					phrase += fl.fewestTokens(fl.uterm(term),fl.l_term(term));
 				} else {
 					phrase += fl.l_term(term);
 				}
