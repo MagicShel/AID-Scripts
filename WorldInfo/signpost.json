@@ -1,114 +1,82 @@
 [
   {
-    "id": "0.9860474352766672",
     "keys": " #[p=1x=1]",
     "entry": "<<●>>>>",
-    "hidden": true,
-    "worldInfoId": "199663722"
+    "hidden": true
   },
   {
-    "id": "0.29003014479858125",
     "hidden": true,
     "keys": " #[p=3x=2]",
-    "entry": "<<●>>>>",
-    "worldInfoId": "199663709"
+    "entry": "<<●>>>>"
   },
   {
-    "id": "0.46580957347518126",
     "hidden": true,
     "keys": " #[p=6x=3]",
-    "entry": "<<●>>>>",
-    "worldInfoId": "199663713"
+    "entry": "<<●>>>>"
   },
   {
-    "id": "0.12061050365053516",
     "hidden": true,
     "keys": " #[p=9x=4]",
-    "entry": "<<●>>>>",
-    "worldInfoId": "199663710"
+    "entry": "<<●>>>>"
   },
   {
-    "id": "0.4889496428389546",
     "hidden": true,
     "keys": "#[p=12x=5]",
-    "entry": "<<●>>>>",
-    "worldInfoId": "199663708"
+    "entry": "<<●>>>>"
   },
   {
-    "id": "0.1024936824483007",
     "hidden": true,
     "keys": " #[p=15x=6]",
-    "entry": "<<●>>>>",
-    "worldInfoId": "199663711"
+    "entry": "<<●>>>>"
   },
   {
-    "id": "0.45310840978949496",
     "hidden": true,
     "keys": " #[p=18x=7]",
-    "entry": "<<●>>>>",
-    "worldInfoId": "199663714"
+    "entry": "<<●>>>>"
   },
   {
-    "id": "0.049091956348331856",
     "hidden": true,
     "keys": " #[p=21x=8]",
-    "entry": "<<●>>>>",
-    "worldInfoId": "199663712"
+    "entry": "<<●>>>>"
   },
   {
-    "id": "0.8596663195880868",
     "hidden": true,
     "keys": " #[p=27x=9]",
-    "entry": "<<●>>>>",
-    "worldInfoId": "199663715"
+    "entry": "<<●>>>>"
   },
   {
-    "id": "0.863314233309934",
     "hidden": true,
     "keys": " #[p=24x=10]",
-    "entry": "<<●>>>>",
-    "worldInfoId": "199663716"
+    "entry": "<<●>>>>"
   },
   {
-    "id": "0.7105866987958598",
     "hidden": true,
     "keys": " #[p=30x=11]",
-    "entry": "<<●>>>>",
-    "worldInfoId": "199663717"
+    "entry": "<<●>>>>"
   },
   {
-    "id": "0.17810470675238577",
     "keys": " #[p=33x=12]",
     "entry": "<<●>>>>",
-    "hidden": true,
-    "worldInfoId": "199663718"
+    "hidden": true
   },
   {
-    "id": "0.6508505071245244",
     "keys": " #[p=36x=13]",
     "entry": "<<●>>>>",
-    "hidden": true,
-    "worldInfoId": "199663720"
+    "hidden": true
   },
   {
-    "id": "0.4475863081737378",
     "keys": " #[p=39x=14]",
     "entry": "<<●>>>>",
-    "hidden": true,
-    "worldInfoId": "199663719"
+    "hidden": true
   },
   {
-    "id": "0.519412208274382",
     "keys": " #[p=42x=15]",
     "entry": "<<●>>>>",
-    "hidden": true,
-    "worldInfoId": "199663721"
+    "hidden": true
   },
   {
-    "id": "0.4883888329611732",
     "keys": " #[m]",
     "entry": "<<●>>>>",
-    "hidden": true,
-    "worldInfoId": "199667920"
+    "hidden": true
   }
 ]
