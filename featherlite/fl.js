@@ -11,8 +11,16 @@ const fl = {
 	tokenizeRegEx: /('[\w\s]+'|\w+|[^\w^\s]+?)/g,
 	skipRegEx: /^['"].*['"]/g,
 	upperRegEx: /^[A-Z]\w+/g,
+	upper_RegEx: /^\s[A-Z]\w+/g,
 	lowerRegEx: /^[a-z]\w+/g,
+	lower_RegEx: /^\s[a-z]\w+/g,
 	symbolRegEx: /[\W]+/g,
+	termValue: (t) => {
+		let term = t.join("");
+		let pref = term.match(fl.lowerRegEx) ? 0 : term.match(fl.upperRegEx) ? 1 : term.match(fl.lower_RegEx) ? 2 : 3;
+		let rank = Math.min(...t.map(e => e.trim().length));
+		return pref - 100 * rank;
+	},
 	tokenizeInput: (s) => [...s.matchAll(fl.tokenizeRegEx)].map(m => m[0]),
 	tokenize: (w) => encode(w).map( (e) => decode([e]) ),
 	smash: (input) => {
@@ -22,32 +30,21 @@ const fl = {
 		for (let pToken of phraseTokens) {
 			let term;
 			if ( pToken.match( fl.skipRegEx ) ) { // Unbreakable token
-				term = pToken;
+				phrase += pToken;
 			} else if ( pToken.match( fl.upperRegEx ) ) { // keep input capitals
-				term = fl.tokenize(fl.u_term(pToken)).length < fl.tokenize(fl.uterm(pToken)).length ? fl.u_term(pToken) : pToken;
+				let options = [fl.tokenize(pToken),fl.tokenize(" " + pToken)]
+					.sort((e,f) => fl.termValue(e) - fl.termValue(f))
+					.filter(o => fl.cmpStartTokens(fl.tokenize(phrase+o.join("")),fl.tokenize(phrase)));
+				phrase += options[0].join("");
 			} else if ( pToken.match( fl.lowerRegEx ) ) { // prefer lower case
-				let term1 = fl.tokenize(fl.l_term(pToken)).length < fl.tokenize(fl.lterm(pToken)).length ? fl.l_term(pToken) : pToken;
-				let term2 = fl.tokenize(fl.u_term(pToken)).length < fl.tokenize(fl.uterm(pToken)).length ? fl.u_term(pToken) : fl.uterm(pToken);
-				term = fl.tokenize(term2).length < fl.tokenize(term1).length ? term2 : term1;
+				let options = [fl.tokenize(pToken),fl.tokenize(fl.uterm(pToken)),fl.tokenize(" " + pToken),fl.tokenize(fl.u_term(pToken))]
+					.sort((e,f) => fl.termValue(e) - fl.termValue(f))
+					.filter(o => fl.cmpStartTokens(fl.tokenize(phrase+o.join("")),fl.tokenize(phrase)));
+				phrase += options[0].join("");
 			} else if ( pToken.match( fl.symbolRegEx ) ) { // symbols
-				term = fl.tokenize(" " + pToken).length < fl.tokenize(pToken).length ? " " + pToken : pToken;
+				phrase += fl.tokenize(" " + pToken).length < fl.tokenize(pToken).length ? " " + pToken : pToken;
 			} else {
-				term = pToken;
-			}
-			if (!phrase) {
-				phrase = term;
-			} else if ( term.match( fl.upperRegEx )  ) {
-				phrase += fl.cmpStartTokens(fl.tokenize(phrase+term),fl.tokenize(phrase)) ? term : fl.u_term(term);
-			} else if ( term.match( fl.lowerRegEx ) ) {
-				if ( fl.cmpStartTokens(fl.tokenize(phrase+term),fl.tokenize(phrase))) {
-					phrase += term;
-				} else if ( fl.cmpStartTokens(fl.tokenize(phrase+fl.uterm(term)),fl.tokenize(phrase)) ) {
-					phrase += fl.fewestTokens(fl.uterm(term),fl.l_term(term));
-				} else {
-					phrase += fl.l_term(term);
-				}
-			} else {
-				phrase += term;
+				phrase += pToken;
 			}
 		}
 		return phrase;
@@ -68,6 +65,8 @@ if ( !cmpTokens ( fl.tokenizeInput("< 'do this' test >"),["<","'do this'","test"
 if ( !cmpTokens ( fl.tokenize('tokenize'),["token","ize"] ) ) throw 'tokenize fail';
 
 // Execution
+let prefix = "●";
+let suffix = "";
 let input = process.argv.slice(2).join(' ');
 let fileRegEx = /^(?:-f|--file)\s(.*)/;
 let matches = input.match(fileRegEx);
@@ -85,11 +84,10 @@ if ( matches && matches[1]) { // Process file
 		const worldEntries = JSON.parse(data);
 		console.log(`worldEntries count: ${worldEntries.length}`)
 		console.log(`worldEntries match: ${worldEntries.filter(e => !e.hidden).length}`);
-		let foo = worldEntries.filter(e => !e.hidden).map(e => e.entry);
 		worldEntries.filter(e => !e.hidden).forEach(e => {
 			countCharsOld += e.entry.length;
 			countTokensOld += fl.tokenize(e.entry).length;
-			e.entry = fl.smash(e.entry); countUpdated++
+			e.entry = fl.smash(prefix + " " + e.entry + " " + suffix); countUpdated++
 			e.hidden = true;
 			countCharsNew += e.entry.length;
 			countTokensNew += fl.tokenize(e.entry).length;
@@ -104,7 +102,7 @@ if ( matches && matches[1]) { // Process file
 		console.log(`tokens old/new: ${countTokensOld}/${countTokensNew}`);
 	});
 } else { // Process input
-	let output = fl.smash(input);
+	let output = fl.smash(prefix + " " + input + " " + suffix);
 	let count = fl.tokenize(output).length;
 	console.log(output);
 	console.log(`Tokens: ${count}`);
