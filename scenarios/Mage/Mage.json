@@ -1,0 +1,162 @@
+[
+  {
+    "hidden": false,
+    "keys": "(sleeper)#[l=3t=9x=3]",
+    "entry": "sleeper ≡non-mage"
+  },
+  {
+    "hidden": false,
+    "keys": "(marauder)#[l=3t=9]",
+    "entry": "marauder ≡ insane mage"
+  },
+  {
+    "hidden": false,
+    "keys": "(nephandi|fallen one)#[l=3t=9]",
+    "entry": "nephandi AKA fallen one ≡ corrupted servant of nightmares"
+  },
+  {
+    "hidden": false,
+    "keys": "(quint)#[l=3t=9x=5]",
+    "entry": "quintessence ≡ magical resource fuels magic "
+  },
+  {
+    "hidden": false,
+    "keys": "(chantry|sanctum)#[l=3t=9]",
+    "entry": "sanctum AKA chantry ≡ mage safehouse & pocket reality & safe from paradox"
+  },
+  {
+    "hidden": false,
+    "keys": "(acolyte)#[l=3t=9x=2]",
+    "entry": "acolyte ≡ non-mage servant of mage believes magic"
+  },
+  {
+    "hidden": false,
+    "keys": "(subtle|vulgar|paradox|magic|cast|spell)#[l=3t=6x=5]",
+    "entry": "tooMuch paradox ≡ magical backlash consequence breaking reality it caused by vulgar spellssubtle Spell ≡ safer to cast& magical yet appears mundanevulgar spell ≡ creates paradox& obviously arcane/ bizarre/ unnatural"
+  },
+  {
+    "hidden": false,
+    "keys": "(technocra|convention|iteration x|new world order|nwo|progenitor|syndicate|void engineer)#[l=3t=6x=8]",
+    "entry": "Technocracy ≡ union of science based mage magic through science their goal conceal magic eliminate supernatural they 5 divisions ≡ 1 Syndicate| 2 'Iteration X'| 3 'New World Order'| 4 Progenitors| 5 'Void Engineers'"
+  },
+  {
+    "hidden": false,
+    "keys": "(syndicate)#[l3t=9]",
+    "entry": "Syndicate ≡ Technocratic division of businessmen / mobsters who manipulate reality through money & finance"
+  },
+  {
+    "hidden": false,
+    "keys": "(iteration x)#[l3t=9]",
+    "entry": "'Iteration X' ≡ Technocratic division of cyborg enforcers equipped future tech weapons"
+  },
+  {
+    "hidden": false,
+    "keys": "(new world order|nwo)#[l3t=9]",
+    "entry": "'New World Order' AKA NWO ≡ Technocratic division of leaders / visionaries can command mortal authorities mind control"
+  },
+  {
+    "hidden": false,
+    "keys": "(progenitor)#[l3t=9]",
+    "entry": "Progenitors ≡ Technocratic division of magical biological science advanced medicine & mutation"
+  },
+  {
+    "hidden": false,
+    "keys": "(iteration x)#[l3t=9]",
+    "entry": "'Void Engineers' ≡ Technocratic division of space & dimensional exploration and protection"
+  },
+  {
+    "hidden": false,
+    "keys": " #[p=11]",
+    "entry": "casting magic requires flourish using gadget/gesture/item/act/phrase/song/music "
+  },
+  {
+    "hidden": false,
+    "keys": "(sphere)#[l=3t=9]",
+    "entry": "7 spheres of magical control ≡ 1 Connection | 2 Entropy | 3 Energy | 4 Life | 5 Matter | 6 Mind | 7 Time "
+  },
+  {
+    "hidden": false,
+    "keys": "(tradition|euthanatos|adept|akashic|chorus|ecsta|dreamspeaker|herme|ether|verbena)#[l=3t=9x=3]",
+    "entry": "'The Traditions' ≡ Alliance of 7 magical traditions devoted individualism& enlightenment they 7 traditions ≡ 1 Euthanatos | 2 'Virtual Adepts' | 3 'Akashic Brotherhood' | 4 'Celestial Chorus' | 5 'Cult of Ecstasy' | 6 'Order of Hermes' | 7 Verbena "
+  },
+  {
+    "hidden": false,
+    "keys": "(euthanatos)#[l=3t=9]",
+    "entry": "Euthanatos ≡ assassin/death/chaos tradition mage primary sphere entropy"
+  },
+  {
+    "keys": "(ecsta)#[l=3t=9]",
+    "entry": "Ecstatic ≡ member of 'Cult of Ecstasy' tantric/transcendent/musican/altered state tradition mage primary sphere time ",
+    "hidden": false
+  },
+  {
+    "keys": "(choi?rus)#[l=3t=9]",
+    "entry": "choirister ≡ member of 'Celestial Chorus' Abrahamic/religious tradition mage primary sphere matter ",
+    "hidden": false
+  },
+  {
+    "hidden": false,
+    "keys": "(akashic)#[l=3t=9]",
+    "entry": "Akashic ≡ member 'Akashic Brotherhood' martial artist/monk/ascetic tradition mage primary sphere mind"
+  },
+  {
+    "hidden": false,
+    "keys": "(herme)=[l=3t=9]",
+    "entry": "hermetic ≡ member 'Order of Hermes' occultist/achemist/prescriptive tradition mage primary sphere energy "
+  },
+  {
+    "hidden": false,
+    "keys": "(verbena)#[l=3t=9]",
+    "entry": "Verbena ≡ wiccan/naturist/shamanic tradition mage primary sphere life "
+  },
+  {
+    "keys": "(virtual adept)#[l=3t=9]",
+    "entry": "'Virtual Adept' ≡ reality hacker/gadgeteer tradition mage primary sphere connection ",
+    "hidden": false
+  },
+  {
+    "keys": "(connection|virtual adept|sphere)#[l=3t=9x=6]",
+    "entry": "connection ≡ sphere grants powers conjuration/distortion/scrying/teleportation/warding ",
+    "hidden": false
+  },
+  {
+    "keys": "(entropy|euthanatos|sphere)#[l=3t=9x=6]",
+    "entry": "entropy ≡ sphere grants powers chaos/dissolution/fate/fortune/order ",
+    "hidden": false
+  },
+  {
+    "keys": "(energy|herme|sphere)#[l=3t=9x=6]",
+    "entry": "energy ≡ sphere grants powers motion/fire/lightning/radiance/cold/physics/technology/weather ",
+    "hidden": false
+  },
+  {
+    "keys": "(life|verbena|sphere)#[l=3t=9x=6]",
+    "entry": "life ≡ sphere grants powers cloning/creation/disease/evolution/healing/improvement/shapeshifting/wounding ",
+    "hidden": false
+  },
+  {
+    "keys": "(mind|akashic|sphere)#[l=3t=9x=6]",
+    "entry": "mind ≡ sphere grants powers astral travel/communication/illusion/mind-shielding/self-empowerment ",
+    "hidden": false
+  },
+  {
+    "keys": "(time|ecsta|sphere)#[l=3t=9x=6]",
+    "entry": "time ≡ sphere grants powers timelines/divination/time manipulation/travel ",
+    "hidden": false
+  },
+  {
+    "keys": "(matter|choi?rus|sphere)#[l=3t=9x=6]",
+    "entry": "matter ≡ sphere grants powers patterns/conjuration/shaping/transmutation ",
+    "hidden": false
+  },
+  {
+    "keys": "(belnor|cern|euthanatos|dessau)#[l=3t=6]",
+    "entry": "'Belnor Cern' ≡ 65♂ Euthanatos master mage he leader Dessau chantry his hair gray eyes gray spry playful",
+    "hidden": false
+  },
+  {
+    "keys": "(dessau)#[l=3t=9]",
+    "entry": "Dessau dense city secretly ruled by vampires features mage chantry werewolves outskirts yet few in city",
+    "hidden": false
+  }
+]
