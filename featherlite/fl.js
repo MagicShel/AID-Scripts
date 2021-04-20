@@ -65,7 +65,7 @@ if ( !cmpTokens ( fl.tokenizeInput("< 'do this' test >"),["<","'do this'","test"
 if ( !cmpTokens ( fl.tokenize('tokenize'),["token","ize"] ) ) throw 'tokenize fail';
 
 // Execution
-let prefix = "";
+let prefix = "●";
 let suffix = "";
 let input = process.argv.slice(2).join(' ');
 let fileRegEx = /^(?:-f|--file)\s(.*)/;
