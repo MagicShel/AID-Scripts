@@ -14,7 +14,7 @@
             return "";            
         } else {
             console.log("Invoking original handler")
-            simpleContextPlugin.commandHandlerPreClearwi(text);
+            return simpleContextPlugin.commandHandlerPreClearwi(text);
         }
     };
     console.log("commandHandler augmented");
