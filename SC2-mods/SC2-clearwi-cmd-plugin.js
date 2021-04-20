@@ -1,5 +1,5 @@
 (function() {
-    SimpleContextPlugin.prototype._commandHandler = SimpleContextPlugin.prototype.commandHandler;
+    SimpleContextPlugin.prototype.commandHandlerPreClearwi = SimpleContextPlugin.prototype.commandHandler;
     SimpleContextPlugin.prototype.commandHandler = function(text) {
         // do something additional
         let match = SC_RE.INPUT_CMD.exec(text)
@@ -14,7 +14,7 @@
             return "";            
         } else {
             console.log("Invoking original handler")
-            simpleContextPlugin._commandHandler(text);
+            simpleContextPlugin.commandHandlerPreClearwi(text);
         }
     };
     console.log("commandHandler augmented");
