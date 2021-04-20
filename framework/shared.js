@@ -1,91 +1,247 @@
-/*
- * Framework
- */
-const commandRegEx = /^(?:\/|> You \/|> You say "\/)(.*)/gi;
+const { context, frontMemory, authorsNote } = state;
+const remember = memory;
+const commandList = state.commandList = [];
+const processorList = state.processorList = [];
 
-const plugins = [];
-const commands = []
-const registerPlugin = (plugin) => plugins.push(plugin);
-const registerCommand = (cmd, p) => commands.push( {command: cmd, plugin: p} );
-
-const runInputCommand = (text) => {
-    let result = commandRegEx.exec(text);
-    if (result && result[0]) {
-        let args = result[0].replace(/"\n$|.\n$/, '').split(/ +/);
-        let command = args.shift().replace(/\W*/gi, '');
-        let c = commands.find(cmd => cmd.command == command);
-        if (c) return c.plugin.inputModifier(args);
+class Entity {
+    #id;
+    #keys;
+    #entry;
+    #hidden;
+    #dirty = false;
+    constructor(e) {
+        if (e instanceof Entity) {
+            throw `Cannot create an entity from an entity`
+        }
+        if ('keys' in e && 'entry' in e) {
+            if (e.keys && e.entry) {
+                this.#id = 'id' in e ? e.id : undefined;
+                this.#keys = e.keys;
+                this.#entry = e.entry;
+                this.#hidden = 'hidden' in e ? e.hidden : false;
+                if (!this.#id) {
+                    this.#dirty = true;
+                }
+            } else {
+                throw `keys and entry are required`;
+            }
+        }
     }
-    return text;
+    get id() {
+        return this.#id;
+    }
+    get keys() {
+        return this.#keys;
+    }
+    set keys(keys) {
+        this.#keys = keys;
+        this.#dirty = true;
+    }
+    get entry() {
+        return this.#entry;
+    }
+    set entry(entry) {
+        this.#entry = entry;
+        this.#dirty = true;
+    }
+    get hidden() {
+        return this.#hidden;
+    }
+    set hidden(hidden) {
+        if (this.#hidden !== hidden) {
+            this.#hidden = hidden;
+            this.#dirty = true;
+        }
+    }
+    log() {
+        console.log(`id: ${this.#id ? this.#id : ""}`);
+        console.log(`keys: ${this.#keys}`);
+        console.log(`entry: ${this.#entry}`);
+        console.log(`hidden: ${this.#hidden}`);
+        console.log(`dirty: ${this.#dirty}`);
+        console.log(`-----`)
+    }
+    isDirty() {
+        return this.#dirty;
+    }
+    isNew() {
+        return !this.#id;
+    }
+    save() {
+        if (this.isDirty() && !this.isNew()) {
+            updateWorldEntry(this.#id, this.#keys, this.#entry, this.#hidden);
+            this.#dirty = false;
+        } else if (this.isNew() && this.isDirty()) {
+            addWorldEntry(this.#keys, this.#entry, this.#hidden);
+            this.#dirty = false;
+        }
+    }
+}
+
+class Entities {
+    #entities = [];
+    constructor(worldInfo) {
+        for (let e of worldInfo) {
+            this.add(e);
+        }
+    }
+    add(e) {
+        let entity = e instanceof Entity ? e : new Entity(e);
+        this.#entities.push(entity);
+        return entity;
+    }
+    remove(e) {
+        if (e instanceof Entity) {
+            if (e.id) {
+                removeWorldEntry(e.id);
+            }
+            let index = this.#entities.indexOf(e);
+            if (index !== -1) {
+                this.#entities.splice(index,1);
+            }
+        }
+    }
+    all() {
+        return this.#entities;
+    }
+    filter(predicate) {
+        return this.#entities.filter(predicate);
+    }
+    forEach(fn) {
+        this.#entities.forEach(fn);
+    }
+    log(p) {
+        if (p) {
+            this.#entities.filter(p).forEach(e => e.log());
+        } else {
+            this.#entities.forEach(e => e.log());
+        }
+        console.log(`=====`)
+    }
+}
+const entities = new Entities(worldEntries);
+const stopProcessing = () => state.stop = true;
+const isStop = () => state.stop;
+
+const extractCommand = (text) => {
+    const match = text.match(/(?:> You say, "\/|> You \/|\/)(\w+)(\W.*)?/i);
+    const cmdName = (match && match[1]) ? match[1] : "";
+    state.cmd = commandList.find(e => e["name"] == cmdName);
+    if (state.cmd) {
+        state.cmdArgs = match[2] ? match[2].trim() : "";
+    }
+}
+
+const begin = () => {
+    state.stop = false;
+}
+
+const complete = (text) => {
+    entities.forEach(e => e.save());
+    if (isStop()) {
+        return {stop: true, text: ""};
+    } else {
+        return {text: text};
+    }
 }
 
 const processInput = (text) => {
     let modifiedText = text;
-    state.message = "";
-    modifiedText = runInputCommand(text);
-    for (let plugin of plugins) {
-        if(modifiedText) { modifiedText = plugin.inputModifier ? plugin.inputModifier(modifiedText) : modifiedText; }
+    begin();
+    extractCommand(modifiedText);
+    if (state.cmd) {
+        state.cmd.exec(state.cmdArgs);
     }
-    if (modifiedText) {
-        return { text: modifiedText };
+    return complete(modifiedText);
+}
+
+const processContext= (text) => {
+    return text;
+}
+
+const processOutput = (text) => {
+    return text;
+}
+
+const registerCommand = (cmdObject) => {
+    if (cmdObject["name"]) {
+        if (! commandList.find(e => e["name"] == cmdObject["name"])) {
+            commandList.push(cmdObject);
+        } else {
+            throw `command already registered: ${cmdObject["name"]}`;
+        }
     } else {
-        return { stop: true };
+        throw `unable to register command\n${cmdObject}\ncause: no name`
     }
 }
 
-const processContext = (text) => {
-    let modifiedText = text;
-    state.message = "";
-    if (plugins) {
-        for (let plugin of plugins) {
-            if(modifiedText) { modifiedText = plugin.contextModifier ? plugin.contextModifier(modifiedText) : modifiedText; }
-        }
-    }
-    if (modifiedText) {
-        return { text: modifiedText };
+const registerProcessor = (procObject) => {
+    if (procObject["input"] || procObject["context"] || procObject["output"]) {
+        processorList.push(procObject);
     } else {
-        return { stop: true };
+        throw `unable to register process without input, context, or output member`;
     }
 }
-const processOutput = (text) => {
-    let modifiedText = text;
-    state.message = "";
-    if (plugins) {
-        for (let plugin of plugins) {
-            if (modifiedText) {
-                modifiedText = plugin.contextModifier ? plugin.outputModifier(modifiedText) : modifiedText;
+ /*  End Framework    */
+registerCommand({
+    name: "test",
+    exec: (arg) => {
+        alert('test')
+        entities.log();
+        stopProcessing();
+    },
+});
+
+registerCommand({
+    name: "show",
+    exec: (arg) => {
+        args = arg.split(" ");
+        let count = 0;
+        if (!args) {
+            entities.forEach(e => {
+                e.hidden = false;
+                count++;
+            });
+        } else {
+            for (let a of args) {
+                let regEx = new RegExp(a);
+                let filtered = entities.filter(e => e.keys.match(regEx));
+                for (let e of filtered) {
+                    e.hidden = false;
+                    count++;
+                }
             }
         }
+        console.log(count);
+        entities.log(e => e.isDirty());
+        stopProcessing();
     }
-    if (modifiedText) {
-        return { text: modifiedText };
-    } else {
-        return { stop: true };
-    }
+});
 
-}
-const beginInput = () => {
-    state.continue = true;
-    state.message = "";
-}
-const submitInput = (submitText) => {
-    if (!submitText || state.continue == false) {
-        return { stop: true };
+registerCommand({
+    name: "hide",
+    exec: (arg) => {
+        args = arg.split(" ");
+        let count = 0;
+        if (!args) {
+            entities.forEach( e => {
+                e.hidden = true;
+                count++;
+            });
+        } else {
+            for (let a of args) {
+                let regEx = new RegExp(a);
+                let filtered = entities.filter(e => e.keys.match(regEx));
+                for (let e of filtered) {
+                    e.hidden = true;
+                    count++;
+                }
+            }
+        }
+        entities.log(e => e.isDirty());
+        stopProcessing();
     }
-    return { text: submitText };
-}
-const submitPrevent = () => state.continue = false;
-const appendMessage = (text) => {
-    if (state.message && state.message.length > 0) {
-        state.message = `${state.message}\n${text}`;
-    } else {
-        state.message = "" + text;
-    }
-}
-
-/* End Framework */
-
-/* Paste Plugins Here */
+})
 
 /*
  * Utilities
@@ -108,7 +264,7 @@ const dicePlugin = {
         }
         return acc;
     },
-    inputModifier: (args) => {
+    roll: (args) => {
         let accumulator = 0;
         let op = "+";
         for (let idx = 0; idx < args.length; idx++) {
@@ -142,15 +298,23 @@ const dicePlugin = {
                 op = oper[0];
             }
         }
-        appendMessage(accumulator); // This won't currently accomplish anything.
-        return "";
+        return `${accumulator}`;
     }
 };
 /* End Dice Roller */
 
-/* End Plugins */
+registerCommand({
+    name: "roll",
+    exec: (arg) => {
+        args = arg.split(" ");
+        console.log(dicePlugin.roll(args));
+        stopProcessing();
+    }
+});
 
-/* Register commands in process order */
-registerCommand("roll",dicePlugin);
-
-/* Register plugins in process order */
+registerCommand({
+    name: "clearwi",
+    exec: (arg) => {
+        entities.remove( e => true);
+    }
+});
