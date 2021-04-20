@@ -14,7 +14,7 @@
             return "";            
         } else {
             console.log("Invoking original handler")
-            _commandHandler(text);
+            simpleContextPlugin._commandHandler(text);
         }
     };
     console.log("commandHandler augmented");
