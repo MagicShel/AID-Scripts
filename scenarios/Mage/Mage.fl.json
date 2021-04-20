@@ -1,1 +1,162 @@
-[{"hidden":true,"keys":"(sleeper)#[l=3t=9x=3]","entry":"● sleeper ≡non-mage"},{"hidden":true,"keys":"(marauder)#[l=3t=9]","entry":"● marauder ≡ insane mage"},{"hidden":true,"keys":"(nephandi|fallen one)#[l=3t=9]","entry":"● nephandiAKA fallenone ≡ corrupted servantof nightmares"},{"hidden":true,"keys":"(quint)#[l=3t=9x=5]","entry":"● quintessence ≡ magicalresource fuelsmagic"},{"hidden":true,"keys":"(chantry|sanctum)#[l=3t=9]","entry":"●sanctumAKAchantry ≡mageSafehouse&pocketreality&safeFrom paradox"},{"hidden":true,"keys":"(acolyte)#[l=3t=9x=2]","entry":"●acolyte ≡non-mage servantofmage believesmagic"},{"hidden":true,"keys":"(subtle|vulgar|paradox|magic|cast|spell)#[l=3t=6x=5]","entry":"●tooMuch paradox ≡ magical backlash consequencebreakingrealityit causedby vulgarSpellssubtleSpell ≡ saferToCast& magicalyet appearsmundanevulgarSpell ≡ creates paradox&Obviously arcane/ bizarre/ unnatural"},{"hidden":true,"keys":"(technocra|convention|iteration x|new world order|nwo|progenitor|syndicate|void engineer)#[l=3t=6x=8]","entry":"●Technocracy ≡unionofsciencebasedmageMagicthroughscienceTheirgoal concealmagic eliminate supernaturalthey5 divisions ≡1 Syndicate|2'Iteration X'|3'New World Order'|4Progenitors|5'Void Engineers'"},{"hidden":true,"keys":"(syndicate)#[l3t=9]","entry":"● Syndicate ≡Technocraticdivisionof businessmen/mobsterswho manipulaterealitythroughmoney& finance"},{"hidden":true,"keys":"(iteration x)#[l3t=9]","entry":"●'Iteration X' ≡Technocraticdivisionof Cyborgenforcers equippedfuturetechweapons"},{"hidden":true,"keys":"(new world order|nwo)#[l3t=9]","entry":"●'New World Order'AKA NWO ≡Technocraticdivisionofleaders/visionariescancommand mortalAuthoritiesmindcontrol"},{"hidden":true,"keys":"(progenitor)#[l3t=9]","entry":"●Progenitors ≡Technocraticdivisionof magical biologicalscienceAdvanced medicine& mutation"},{"hidden":true,"keys":"(iteration x)#[l3t=9]","entry":"●'Void Engineers' ≡Technocraticdivisionofspace&dimensional explorationandprotection"},{"hidden":true,"keys":" #[p=11]","entry":"●castingmagicrequires flourishusing gadget/ gesture/item/act/phrase/song/music"},{"hidden":true,"keys":"(sphere)#[l=3t=9]","entry":"●7 spheresof magicalcontrol ≡1Connection|2Entropy|3Energy|4Life|5 Matter|6Mind|7Time"},{"hidden":true,"keys":"(tradition|euthanatos|adept|akashic|chorus|ecsta|dreamspeaker|herme|ether|verbena)#[l=3t=9x=3]","entry":"●'The Traditions' ≡ Allianceof7 magical traditions devotedindividualism& enlightenmentthey7 traditions ≡1Euthanatos|2'Virtual Adepts'|3'Akashic Brotherhood'|4'Celestial Chorus'|5'Cult of Ecstasy'|6'Order of Hermes'|7 Verbena"},{"hidden":true,"keys":"(euthanatos)#[l=3t=9]","entry":"●Euthanatos ≡ assassin/death/ chaos traditionmageprimarySphere entropy"},{"keys":"(ecsta)#[l=3t=9]","entry":"●Ecstatic ≡memberof'Cult of Ecstasy' tantric/transcendent/musican/ alteredstate traditionmageprimarySphereTime","hidden":true},{"keys":"(choi?rus)#[l=3t=9]","entry":"● choirister ≡memberof'Celestial Chorus'Abrahamic/religious traditionmageprimarySpherematter","hidden":true},{"hidden":true,"keys":"(akashic)#[l=3t=9]","entry":"●Akashic ≡member'Akashic Brotherhood' martialartist/ monk/ascetic traditionmageprimarySpheremind"},{"hidden":true,"keys":"(herme)=[l=3t=9]","entry":"●hermetic ≡member'Order of Hermes'occultist/achemist/prescriptive traditionmageprimarySphereenergy"},{"hidden":true,"keys":"(verbena)#[l=3t=9]","entry":"● Verbena ≡wiccan/naturist/shamanic traditionmageprimarySpherelife"},{"keys":"(virtual adept)#[l=3t=9]","entry":"●'Virtual Adept' ≡reality hacker/ gadgeteer traditionmageprimarySphereconnection","hidden":true},{"keys":"(connection|virtual adept|sphere)#[l=3t=9x=6]","entry":"●connection ≡Sphere grantspowers conjuration/ distortion/scrying/ teleportation/warding","hidden":true},{"keys":"(entropy|euthanatos|sphere)#[l=3t=9x=6]","entry":"● entropy ≡Sphere grantspowers chaos/ dissolution/ fate/fortune/order","hidden":true},{"keys":"(energy|herme|sphere)#[l=3t=9x=6]","entry":"●energy ≡Sphere grantspowersmotion/fire/ lightning/radiance/cold/ physics/technology/weather","hidden":true},{"keys":"(life|verbena|sphere)#[l=3t=9x=6]","entry":"●life ≡Sphere grantspowers cloning/creation/ disease/ evolution/ healing/ improvement/shapeshifting/ wounding","hidden":true},{"keys":"(mind|akashic|sphere)#[l=3t=9x=6]","entry":"●mind ≡Sphere grantspowers Astraltravel/communication/illusion/mind- shielding/self- empowerment","hidden":true},{"keys":"(time|ecsta|sphere)#[l=3t=9x=6]","entry":"●time ≡Sphere grantspowers timelines/divination/time manipulation/travel","hidden":true},{"keys":"(matter|choi?rus|sphere)#[l=3t=9x=6]","entry":"●matter ≡Sphere grantspowers patterns/ conjuration/ shaping/ transmutation","hidden":true},{"keys":"(belnor|cern|euthanatos|dessau)#[l=3t=6]","entry":"●'Belnor Cern' ≡65♂EuthanatosmastermageheleaderDessauchantryhis hairgrayeyesgraySpry playful","hidden":true},{"keys":"(dessau)#[l=3t=9]","entry":"●Dessau densecity secretly ruledby vampiresfeaturesmagechantrywerewolves outskirtsyetfewinCity","hidden":true}]
+[
+    {
+        "hidden": true,
+        "keys": "(sleeper)#[l=3t=9x=3]",
+        "entry": "● sleeper ≡non-mage"
+    },
+    {
+        "hidden": true,
+        "keys": "(marauder)#[l=3t=9]",
+        "entry": "● marauder ≡ insane mage"
+    },
+    {
+        "hidden": true,
+        "keys": "(nephandi|fallen one)#[l=3t=9]",
+        "entry": "● nephandiAKA fallenone ≡ corrupted servantof nightmares"
+    },
+    {
+        "hidden": true,
+        "keys": "(quint)#[l=3t=9x=5]",
+        "entry": "● quintessence ≡ magicalresource fuelsmagic"
+    },
+    {
+        "hidden": true,
+        "keys": "(chantry|sanctum)#[l=3t=9]",
+        "entry": "●sanctumAKAchantry ≡mageSafehouse&pocketreality&safeFrom paradox"
+    },
+    {
+        "hidden": true,
+        "keys": "(acolyte)#[l=3t=9x=2]",
+        "entry": "●acolyte ≡non-mage servantofmage believesmagic"
+    },
+    {
+        "hidden": true,
+        "keys": "(subtle|vulgar|paradox|magic|cast|spell)#[l=3t=6x=5]",
+        "entry": "●tooMuch paradox ≡ magical backlash consequencebreakingrealityit causedby vulgarSpellssubtleSpell ≡ saferToCast& magicalyet appearsmundanevulgarSpell ≡ creates paradox&Obviously arcane/ bizarre/ unnatural"
+    },
+    {
+        "hidden": true,
+        "keys": "(technocra|convention|iteration x|new world order|nwo|progenitor|syndicate|void engineer)#[l=3t=6x=8]",
+        "entry": "●Technocracy ≡unionofsciencebasedmageMagicthroughscienceTheirgoal concealmagic eliminate supernaturalthey5 divisions ≡1 Syndicate|2'Iteration X'|3'New World Order'|4Progenitors|5'Void Engineers'"
+    },
+    {
+        "hidden": true,
+        "keys": "(syndicate)#[l3t=9]",
+        "entry": "● Syndicate ≡Technocraticdivisionof businessmen/mobsterswho manipulaterealitythroughmoney& finance"
+    },
+    {
+        "hidden": true,
+        "keys": "(iteration x)#[l3t=9]",
+        "entry": "●'Iteration X' ≡Technocraticdivisionof Cyborgenforcers equippedfuturetechweapons"
+    },
+    {
+        "hidden": true,
+        "keys": "(new world order|nwo)#[l3t=9]",
+        "entry": "●'New World Order'AKA NWO ≡Technocraticdivisionofleaders/visionariescancommand mortalAuthoritiesmindcontrol"
+    },
+    {
+        "hidden": true,
+        "keys": "(progenitor)#[l3t=9]",
+        "entry": "●Progenitors ≡Technocraticdivisionof magical biologicalscienceAdvanced medicine& mutation"
+    },
+    {
+        "hidden": true,
+        "keys": "(iteration x)#[l3t=9]",
+        "entry": "●'Void Engineers' ≡Technocraticdivisionofspace&dimensional explorationandprotection"
+    },
+    {
+        "hidden": true,
+        "keys": " #[p=11]",
+        "entry": "●castingmagicrequires flourishusing gadget/ gesture/item/act/phrase/song/music"
+    },
+    {
+        "hidden": true,
+        "keys": "(sphere)#[l=3t=9]",
+        "entry": "●7 spheresof magicalcontrol ≡1Connection|2Entropy|3Energy|4Life|5 Matter|6Mind|7Time"
+    },
+    {
+        "hidden": true,
+        "keys": "(tradition|euthanatos|adept|akashic|chorus|ecsta|dreamspeaker|herme|ether|verbena)#[l=3t=9x=3]",
+        "entry": "●'The Traditions' ≡ Allianceof7 magical traditions devotedindividualism& enlightenmentthey7 traditions ≡1Euthanatos|2'Virtual Adepts'|3'Akashic Brotherhood'|4'Celestial Chorus'|5'Cult of Ecstasy'|6'Order of Hermes'|7 Verbena"
+    },
+    {
+        "hidden": true,
+        "keys": "(euthanatos)#[l=3t=9]",
+        "entry": "●Euthanatos ≡ assassin/death/ chaos traditionmageprimarySphere entropy"
+    },
+    {
+        "keys": "(ecsta)#[l=3t=9]",
+        "entry": "●Ecstatic ≡memberof'Cult of Ecstasy' tantric/transcendent/musican/ alteredstate traditionmageprimarySphereTime",
+        "hidden": true
+    },
+    {
+        "keys": "(choi?rus)#[l=3t=9]",
+        "entry": "● choirister ≡memberof'Celestial Chorus'Abrahamic/religious traditionmageprimarySpherematter",
+        "hidden": true
+    },
+    {
+        "hidden": true,
+        "keys": "(akashic)#[l=3t=9]",
+        "entry": "●Akashic ≡member'Akashic Brotherhood' martialartist/ monk/ascetic traditionmageprimarySpheremind"
+    },
+    {
+        "hidden": true,
+        "keys": "(herme)=[l=3t=9]",
+        "entry": "●hermetic ≡member'Order of Hermes'occultist/achemist/prescriptive traditionmageprimarySphereenergy"
+    },
+    {
+        "hidden": true,
+        "keys": "(verbena)#[l=3t=9]",
+        "entry": "● Verbena ≡wiccan/naturist/shamanic traditionmageprimarySpherelife"
+    },
+    {
+        "keys": "(virtual adept)#[l=3t=9]",
+        "entry": "●'Virtual Adept' ≡reality hacker/ gadgeteer traditionmageprimarySphereconnection",
+        "hidden": true
+    },
+    {
+        "keys": "(connection|virtual adept|sphere)#[l=3t=9x=6]",
+        "entry": "●connection ≡Sphere grantspowers conjuration/ distortion/scrying/ teleportation/warding",
+        "hidden": true
+    },
+    {
+        "keys": "(entropy|euthanatos|sphere)#[l=3t=9x=6]",
+        "entry": "● entropy ≡Sphere grantspowers chaos/ dissolution/ fate/fortune/order",
+        "hidden": true
+    },
+    {
+        "keys": "(energy|herme|sphere)#[l=3t=9x=6]",
+        "entry": "●energy ≡Sphere grantspowersmotion/fire/ lightning/radiance/cold/ physics/technology/weather",
+        "hidden": true
+    },
+    {
+        "keys": "(life|verbena|sphere)#[l=3t=9x=6]",
+        "entry": "●life ≡Sphere grantspowers cloning/creation/ disease/ evolution/ healing/ improvement/shapeshifting/ wounding",
+        "hidden": true
+    },
+    {
+        "keys": "(mind|akashic|sphere)#[l=3t=9x=6]",
+        "entry": "●mind ≡Sphere grantspowers Astraltravel/communication/illusion/mind- shielding/self- empowerment",
+        "hidden": true
+    },
+    {
+        "keys": "(time|ecsta|sphere)#[l=3t=9x=6]",
+        "entry": "●time ≡Sphere grantspowers timelines/divination/time manipulation/travel",
+        "hidden": true
+    },
+    {
+        "keys": "(matter|choi?rus|sphere)#[l=3t=9x=6]",
+        "entry": "●matter ≡Sphere grantspowers patterns/ conjuration/ shaping/ transmutation",
+        "hidden": true
+    },
+    {
+        "keys": "(belnor|cern|euthanatos|dessau)#[l=3t=6]",
+        "entry": "●'Belnor Cern' ≡65♂EuthanatosmastermageheleaderDessauchantryhis hairgrayeyesgraySpry playful",
+        "hidden": true
+    },
+    {
+        "keys": "(dessau)#[l=3t=9]",
+        "entry": "●Dessau densecity secretly ruledby vampiresfeaturesmagechantrywerewolves outskirtsyetfewinCity",
+        "hidden": true
+    }
+]
