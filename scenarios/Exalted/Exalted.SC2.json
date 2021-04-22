@@ -1,0 +1,837 @@
+[
+    {
+      "keys": "#sc:regex",
+      "entry": "{\"YOU\":\"you(r|rself)?\",\"HER\":\"she|her(self|s)?\",\"HIM\":\"he|him(self)?|his\",\"FEMALE\":\"♀|female|woman|lady|girl|gal|chick|mother|m[uo]m(m[ya])?|daughter|aunt|gran(dmother|dma|ny)|queen|princess|duchess|countess|baroness|empress|maiden|witch\",\"MALE\":\"♂|male|man|gentleman|boy|guy|lord|lad|dude|father|dad(dy|die)?|pa(pa)?|son|uncle|grand(father|pa|dad)|king|prince|duke|count|baron|emperor|wizard\",\"DEAD\":\"dead|deceased|departed|died|expired|killed|lamented|perished|slain|slaughtered\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#sc:regex",
+      "entry": "{\"UNDEAD\":\"banshee|draugr|dullahan|ghost|ghoul|grim reaper|jiangshi|lich|mummy|phantom|poltergeist|revenant|shadow person|skeleton|spectre|undead|vampire|vrykolakas|wight|wraith|zombie\",\"LOOK_AHEAD\":\"describ(e)?|display|examin(e)?|expos(e)?|glimps(e)?|imagin(e)?|notic(e)?|observ(e)?|ogl(e)?|peek|see|spot(t)?|view|watch\",\"LOOK_AHEAD_ACTION\":\"frown|gaz(e)?|glanc(e)?|glar(e)?|leer|look|smil(e)?|star(e[ds]?|ing)\",\"LOOK_BEHIND\":\"appears|arrives|comes out|emerges|looms|materializes\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#sc:regex",
+      "entry": "{\"LOOK_BEHIND_ACTION\":\"checked|displayed|examined|exposed|glimpsed|inspected|noticed|observed|regarded|scanned|scrutinized|seen|spotted|sprawl(ed|ing)|viewed|watched|wearing\",\"TRAVEL_TO\":\"ambl(e)?|crawl|danc(e)?|dash|driv(e)?|fall|fly|head|hop(p)?|hurry|jump|rac(e)?|rid(e)?|run(n)?|rush|saunter|skip(p)?|travel(l)?|trip(p)?|trudg(e)?|walk|wander\",\"TO\":\"to(ward)?|into|near|around\",\"OUT\":\"out\",\"AREA\":\"area|room|place\",\"ARRIVE_AT\":\"arrive|appear|land\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#sc:regex",
+      "entry": "{\"AT\":\"at|on(to)?|in(side)?|near|close to|around\",\"INFLECTED\":\"(?:ing|ed)?\",\"PLURAL\":\"(?:es|s|'s|e's)?\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#sc:notes",
+      "entry": "{\"you\":\"Chojin\",\"main\":\"•ThesunhasSet&city streetsquietYetguards;EveryoneisHomeoratpub.\",\"editor\":{\"note\":\"Chojin is infiltrating the city of Cowpai.\",\"genre\":\"epic fantasy\",\"style\":\"linear arousing flowery dramatic\",\"theme\":\"survival & corrupted heroes\",\"rating\":\"NC-17\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#sc:notes",
+      "entry": "{\"prompt1\":\"The sun has set, bringing dusk to the port city of Cowpai. Soldiers patrol the streets safekeeping the wealthy parts of town. The commoners are all retired to their homes or drinking in a pub. You are sneaking through the shadows on a mission.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#sc:config",
+      "entry": "{\"spacing\":0,\"dead_text\":\"is dead\",\"signposts\":0,\"scene_break\":\"〰️\",\"hud_maximized\":\"pov/scene, track\",\"hud_minimized\":\"track\",\"rel_size_limit\":800,\"signposts_distance\":300,\"entry_insert_distance\":0.6,\"signposts_initial_distance\":50}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:parent",
+      "entry": "{\"title\":\"parent\",\"trigger\":\"/parent/\",\"scope\":\"parents\",\"target\":{\"category\":\"character, faction\",\"pronoun\":\"unknown\"},\"source\":{\"category\":\"character, faction\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:mother",
+      "entry": "{\"title\":\"mother\",\"trigger\":\"/mother|m[uo]m(m[ya])?/\",\"scope\":\"parents\",\"target\":{\"category\":\"character\",\"pronoun\":\"her\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:father",
+      "entry": "{\"title\":\"father\",\"trigger\":\"/father|dad(dy|die)?|pa(pa)?/\",\"scope\":\"parents\",\"target\":{\"category\":\"character\",\"pronoun\":\"him\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:child",
+      "entry": "{\"title\":\"child\",\"trigger\":\"/child/\",\"scope\":\"children\",\"target\":{\"category\":\"character, faction\",\"pronoun\":\"unknown\"},\"source\":{\"category\":\"character, faction\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:daughter",
+      "entry": "{\"title\":\"daughter\",\"trigger\":\"/daughter/\",\"scope\":\"children\",\"target\":{\"category\":\"character\",\"pronoun\":\"her\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:son",
+      "entry": "{\"title\":\"son\",\"trigger\":\"/son/\",\"scope\":\"children\",\"target\":{\"category\":\"character\",\"pronoun\":\"him\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:sibling",
+      "entry": "{\"title\":\"sibling\",\"trigger\":\"/sibling/\",\"scope\":\"siblings\",\"target\":{\"category\":\"character, faction\",\"pronoun\":\"unknown\"},\"source\":{\"category\":\"character, faction\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:sister",
+      "entry": "{\"title\":\"sister\",\"trigger\":\"/sis(ter)?/\",\"scope\":\"siblings\",\"target\":{\"category\":\"character\",\"pronoun\":\"her\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:brother",
+      "entry": "{\"title\":\"brother\",\"trigger\":\"/bro(ther)?/\",\"scope\":\"siblings\",\"target\":{\"category\":\"character\",\"pronoun\":\"him\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:niece",
+      "entry": "{\"title\":\"niece\",\"trigger\":\"/niece/\",\"scope\":\"siblings children\",\"target\":{\"category\":\"character\",\"pronoun\":\"her\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:nephew",
+      "entry": "{\"title\":\"nephew\",\"trigger\":\"/nephew/\",\"scope\":\"siblings children\",\"target\":{\"category\":\"character\",\"pronoun\":\"him\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:aunt",
+      "entry": "{\"title\":\"aunt\",\"trigger\":\"/aunt/\",\"scope\":\"parents siblings\",\"target\":{\"category\":\"character\",\"pronoun\":\"her\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:uncle",
+      "entry": "{\"title\":\"uncle\",\"trigger\":\"/uncle/\",\"scope\":\"parents siblings\",\"target\":{\"category\":\"character\",\"pronoun\":\"him\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:grandmother",
+      "entry": "{\"title\":\"grandmother\",\"trigger\":\"/gran(dmother|dma|ny)/\",\"scope\":\"grandparents\",\"target\":{\"category\":\"character\",\"pronoun\":\"her\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:grandfather",
+      "entry": "{\"title\":\"grandfather\",\"trigger\":\"/grand(father|pa|dad)/\",\"scope\":\"grandparents\",\"target\":{\"category\":\"character\",\"pronoun\":\"him\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:granddaughter",
+      "entry": "{\"title\":\"granddaughter\",\"trigger\":\"/granddaughter/\",\"scope\":\"grandchildren\",\"target\":{\"category\":\"character\",\"pronoun\":\"her\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:grandson",
+      "entry": "{\"title\":\"grandson\",\"trigger\":\"/grandson/\",\"scope\":\"grandchildren\",\"target\":{\"category\":\"character\",\"pronoun\":\"him\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:spouse",
+      "entry": "{\"title\":\"spouse\",\"trigger\":\"/spouse/\",\"target\":{\"category\":\"character\",\"pronoun\":\"unknown\",\"type\":\"M\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:wife",
+      "entry": "{\"title\":\"wife\",\"trigger\":\"/wife/\",\"target\":{\"category\":\"character\",\"pronoun\":\"her\",\"type\":\"M\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:ex wife",
+      "entry": "{\"title\":\"ex wife\",\"trigger\":\"/ex wife/\",\"target\":{\"category\":\"character\",\"pronoun\":\"her\",\"type\":\"M\",\"mod\":\"x\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:husband",
+      "entry": "{\"title\":\"husband\",\"trigger\":\"/husband/\",\"target\":{\"category\":\"character\",\"pronoun\":\"him\",\"type\":\"M\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:ex husband",
+      "entry": "{\"title\":\"ex husband\",\"trigger\":\"/ex husband/\",\"target\":{\"category\":\"character\",\"pronoun\":\"him\",\"type\":\"M\",\"mod\":\"x\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:friend",
+      "entry": "{\"title\":\"friend\",\"trigger\":\"/friend/\",\"target\":{\"category\":\"character, faction\",\"type\":\"F\",\"mod\":\"-+\"},\"source\":{\"category\":\"character, faction\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:best friend",
+      "entry": "{\"title\":\"best friend\",\"trigger\":\"/best friend|bff|bestie/\",\"target\":{\"category\":\"character, faction\",\"type\":\"F\",\"mod\":\"+\"},\"source\":{\"category\":\"character, faction\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:lover",
+      "entry": "{\"title\":\"lover\",\"trigger\":\"/lover/\",\"target\":{\"category\":\"character\",\"type\":\"L\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:ally",
+      "entry": "{\"title\":\"ally\",\"trigger\":\"/ally/\",\"target\":{\"category\":\"character, faction\",\"type\":\"A\"},\"source\":{\"category\":\"character, faction\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:enemy",
+      "entry": "{\"title\":\"enemy\",\"trigger\":\"/enemy/\",\"target\":{\"category\":\"character, faction\",\"type\":\"E\"},\"source\":{\"category\":\"character, faction\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:master",
+      "entry": "{\"title\":\"master\",\"trigger\":\"/master/\",\"scope\":\"owners\",\"target\":{\"category\":\"character\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:slave",
+      "entry": "{\"title\":\"slave\",\"trigger\":\"/slave/\",\"scope\":\"property\",\"target\":{\"category\":\"character\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:feature",
+      "entry": "{\"title\":\"feature\",\"scope\":\"areas, things\",\"target\":{\"category\":\"location\"},\"source\":{\"category\":\"location\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:exit",
+      "entry": "{\"title\":\"exit\",\"scope\":\"exits\",\"target\":{\"category\":\"location\"},\"source\":{\"category\":\"location\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:consists",
+      "entry": "{\"title\":\"consists\",\"scope\":\"components\",\"target\":{\"category\":\"location, thing\"},\"source\":{\"category\":\"location, thing\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:owns",
+      "entry": "{\"title\":\"owns\",\"scope\":\"owners\",\"target\":{\"category\":\"thing\"},\"source\":{\"category\":\"character, faction\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:owner",
+      "entry": "{\"title\":\"owner\",\"scope\":\"owners\",\"target\":{\"category\":\"character, faction\"},\"source\":{\"category\":\"thing\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:rules",
+      "entry": "{\"title\":\"rules\",\"scope\":\"owners\",\"target\":{\"category\":\"location\"},\"source\":{\"category\":\"character, faction\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:ruler",
+      "entry": "{\"title\":\"ruler\",\"scope\":\"owners\",\"target\":{\"category\":\"character, faction\"},\"source\":{\"category\":\"location\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:leads",
+      "entry": "{\"title\":\"leads\",\"target\":{\"category\":\"faction\",\"type\":\"M\",\"mod\":\"+\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:leader",
+      "entry": "{\"title\":\"leader\",\"target\":{\"category\":\"character\"},\"source\":{\"category\":\"faction\",\"type\":\"M\",\"mod\":\"+\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:align",
+      "entry": "{\"title\":\"align\",\"target\":{\"category\":\"faction\",\"type\":\"M\",\"mod\":\"-+\"},\"source\":{\"category\":\"character\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:member",
+      "entry": "{\"title\":\"member\",\"target\":{\"category\":\"character\"},\"source\":{\"category\":\"faction\",\"type\":\"M\",\"mod\":\"-+\"}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:likes",
+      "entry": "{\"title\":\"likes\",\"source\":{\"category\":\"character\",\"disp\":5}}",
+      "hidden": true
+    },
+    {
+      "keys": "#title:hates",
+      "entry": "{\"title\":\"hates\",\"source\":{\"category\":\"character\",\"disp\":1}}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Empress",
+      "entry": "{\"label\":\"Empress\",\"trigger\":\"/Empress/g\",\"category\":\"character\",\"status\":\"alive\",\"pronoun\":\"her\",\"main\":\"Empress • Scarlet Empress:♀ uncontestedsovereignofThe realm;missingfor5years.\",\"seen\":\"Empress .\",\"heard\":\"Empress .\",\"topic\":\"Empress •'Scarlet Empress'MissingShe saved realmfrom'Fair Folk'.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Solar",
+      "entry": "{\"main\":\"•Solar:mightestExaltsTheyimbuedwith superhuman skillsSince chosenby'The Unconquered Sun'\",\"label\":\"Solar\",\"topic\":\"•Solar:once defeated Titans behalfof godsTheyRuledasKingsyet became corruptandwere overthrown\",\"pronoun\":\"unknown\",\"trigger\":\"/Solar/g\",\"category\":\"other\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Dragon-Blood",
+      "entry": "{\"main\":\"•Dragon-BloodAKA Terrestrial:most numerous& weakestExaltYettheyimbuedwith superhuman skillsSince chosenby'The Five Elemental Dragons'\",\"seen\":\"•Dragon-Bloodweapons&armoroftensteelYetSometimesmagic Jade\",\"heard\":\"•Dragon-Bloodspeakwith divine mandate\",\"label\":\"Dragon-Blood\",\"topic\":\"•Dragon-Bloods:most capable representativesofThe realm\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"trigger\":\"/Dragon-Blood/g\",\"category\":\"other\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:anima flare",
+      "entry": "{\"label\":\"anima flare\",\"category\":\"other\",\"trigger\":\"/anima flare/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•anima flare:visibleDisplayof essenceusagebyExalts\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:anima",
+      "entry": "{\"main\":\"•anima: invisibleaura surroundinglivingthings\",\"seen\":\"•anima: becomesvisibleas essenceused\",\"label\":\"anima\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"trigger\":\"/anima/g\",\"category\":\"other\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:artifact",
+      "entry": "{\"main\":\"• artifact:magicobject forgedofOrichalcum| Jade|Soulsteel| moonsilver|starmetal\",\"label\":\"artifact\",\"topic\":\"• Solarsuseorichalcum/Dragon-Bloodsuse Jade/AbyssalsuseSoulsteel/ Lunarsuse moonsilver/SiderealsuseStarmetal\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"trigger\":\"/artifact/g\",\"category\":\"other\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:caste mark",
+      "entry": "{\"main\":\"• casteMark: invisiblemarkonbrow showingExalt's caste\",\"label\":\"caste mark\",\"pronoun\":\"unknown\",\"trigger\":\"/caste mark/g\",\"category\":\"other\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:daybreak caste",
+      "entry": "{\"main\":\"•daybreak caste: Abyssalcastof craftsman,necrosurgeons,Soul-forgersTheyknow forbiddenloreof UnderworldandmastersOfnecromancy\",\"label\":\"daybreak caste\",\"pronoun\":\"unknown\",\"trigger\":\"/daybreak caste/g\",\"category\":\"faction\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:dusk caste",
+      "entry": "{\"main\":\"• dusk caste: Abyssalcastof vicious warriors, elegant duelists, battlefieldreapers\",\"label\":\"dusk caste\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"trigger\":\"/dusk caste/g\",\"category\":\"faction\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:midnight caste",
+      "entry": "{\"main\":\"• midnight caste: Abyssal casteof evangelistsOfThegrave, speakersfor ancestorCults,lordsOfdead.\",\"label\":\"midnight caste\",\"pronoun\":\"unknown\",\"trigger\":\"/midnight caste/g\",\"category\":\"faction\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:eclipse caste",
+      "entry": "{\"main\":\"• eclipse caste:Solar casteof Rangers, diplomats, bureaucrats\",\"label\":\"eclipse caste\",\"pronoun\":\"unknown\",\"trigger\":\"/eclipse caste/g\",\"category\":\"faction\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:night caste",
+      "entry": "{\"main\":\"•night caste:Solar casteofInvestigators, spies, assassins\",\"label\":\"night caste\",\"pronoun\":\"unknown\",\"trigger\":\"/night caste/g\",\"category\":\"faction\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:twilight caste",
+      "entry": "{\"main\":\"• twilight caste:Solar casteof scholars,craftpersons,and occultists\",\"label\":\"twilight caste\",\"pronoun\":\"unknown\",\"trigger\":\"/twilight caste/g\",\"category\":\"faction\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:zenith caste",
+      "entry": "{\"main\":\"•zenith caste:Solar casteof priests, prophets,orators\",\"label\":\"zenith caste\",\"pronoun\":\"unknown\",\"trigger\":\"/zenith caste/g\",\"category\":\"faction\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:dawn caste",
+      "entry": "{\"main\":\"• dawn caste:Solar casteof soldiers, warriors,armsmasters, generals\",\"label\":\"dawn caste\",\"pronoun\":\"unknown\",\"trigger\":\"/dawn caste/g\",\"category\":\"faction\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:moonshadow caste",
+      "entry": "{\"main\":\"•moonshadow caste: Abyssal casteofemissaries&lawgiversThey formalizeaccordsbetweenlivinganddead\",\"label\":\"moonshadow caste\",\"pronoun\":\"unknown\",\"trigger\":\"/moonshadow caste/g\",\"category\":\"faction\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:day caste",
+      "entry": "{\"main\":\"•day caste: Abyssal casteofspys& assassins\",\"label\":\"day caste\",\"pronoun\":\"unknown\",\"trigger\":\"/day caste/g\",\"category\":\"faction\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:outcaste",
+      "entry": "{\"main\":\"•outcaste:Dragon-BloodswhoNot swornToThe Realm\",\"label\":\"outcaste\",\"pronoun\":\"unknown\",\"trigger\":\"/outcaste/g\",\"category\":\"faction\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:celestial",
+      "entry": "{\"label\":\"celestial\",\"category\":\"other\",\"trigger\":\"/celestial/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• celestial:Exalted championofanIncarnae:Solar/ Lunar/Sidereal\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:exalt",
+      "entry": "{\"main\":\"•Exalt: mortal chosen& blessedwithpowerof gods\",\"label\":\"exalt\",\"pronoun\":\"unknown\",\"trigger\":\"/exalt/g\",\"category\":\"other\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:daiklave",
+      "entry": "{\"label\":\"daiklave\",\"category\":\"other\",\"trigger\":\"/daiklave/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•daiklave: iconicExaltedweaponEachunique& forgedfromorichalcum<Solar>| Jade<Dragon-Blood>|Soulsteel< Abyssal>| moonsilver< Lunar>|starmetal<Sidereal>.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:demesne",
+      "entry": "{\"label\":\"demesne\",\"category\":\"other\",\"trigger\":\"/demesne/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•demesne:natural vortexof essenceTheyoftenhavemanseToCollect& refine essence\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:dynast",
+      "entry": "{\"label\":\"dynast\",\"category\":\"faction\",\"trigger\":\"/dynast/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• dynast:dragon-bloodedrelativeof Scarlet EmpressThey rulingclassofThe Realm\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:essence",
+      "entry": "{\"label\":\"essence\",\"category\":\"other\",\"trigger\":\"/essence/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• essence:currentofenergy movesThroughallthingsitSourceofmagic&Wonder\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Exigence",
+      "entry": "{\"main\":\"•Exigence:forceof divinefire& inspirationcreatedbyTheUnconqueredSunthat lesser gods mightHaveownExalted champions\",\"label\":\"Exigence\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"trigger\":\"/Exigence/g\",\"category\":\"other\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Dragons",
+      "entry": "{\"label\":\"Dragons\",\"category\":\"other\",\"trigger\":\"/Dragons/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• ElementalDragon:oneofFivechildrenof GaiaThey patronsOfDragon-Bloodedthey immenseSizeand unfathomablepower.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Gaia",
+      "entry": "{\"label\":\"Gaia\",\"category\":\"character\",\"trigger\":\"/Gaia/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• Gaia:only titanSideWith godsSincelove LunaShemotherOfTheFive Elemental Dragons\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Contagion",
+      "entry": "{\"label\":\"Contagion\",\"category\":\"other\",\"trigger\":\"/Contagion/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•GreatContagion: catastrophic plagueWhich ended Shogunate.itkilled90%living creatureyetExalts& essenceusersresistant.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Incarna",
+      "entry": "{\"label\":\"Incarna\",\"category\":\"faction\",\"trigger\":\"/Incarna/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•Incarnae: greatestof godsand rulersof Heaven:'The Unconquered Sun', Luna,'The Five Maidens'\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Unconquered Sun",
+      "entry": "{\"label\":\"Unconquered Sun\",\"category\":\"character\",\"trigger\":\"/Unconquered Sun/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•'The Unconquered Sun': greatestIncarnae,kingof Heaven,godof virtue&will,war& enlightenment,day&night, excellenceheled rebellionagainst Titans.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Luna",
+      "entry": "{\"label\":\"Luna\",\"category\":\"character\",\"trigger\":\"/Luna/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• Luna:Incarna, goddessofmoon,night,luck,iconoclasm,change.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Five Maidens",
+      "entry": "{\"label\":\"Five Maidens\",\"category\":\"faction\",\"trigger\":\"/Five Maidens/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•'The Five Maidens of Destiny': Mercury, Venus,Mars, Jupiter, SaturnThey overseersof fateand destinythey speak rarely.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Mercury",
+      "entry": "{\"label\":\"Mercury\",\"category\":\"character\",\"trigger\":\"/Mercury/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• Mercury: maidenof journeysSheIncarna\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Mars",
+      "entry": "{\"label\":\"Mars\",\"category\":\"character\",\"trigger\":\"/Mars/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•Mars: maidenof battlesSheIncarna.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Venus",
+      "entry": "{\"label\":\"Venus\",\"category\":\"character\",\"trigger\":\"/Venus/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• Venus: maidenofserenitysheIncarna\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Jupiter",
+      "entry": "{\"label\":\"Jupiter\",\"category\":\"character\",\"trigger\":\"/Jupiter/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• Jupiter: maidenof secretsSheIncarna\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Saturn",
+      "entry": "{\"label\":\"Saturn\",\"category\":\"character\",\"trigger\":\"/Saturn/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• Saturn: maidenof endingssheIncarna\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:manse",
+      "entry": "{\"label\":\"manse\",\"category\":\"other\",\"trigger\":\"/manse/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•manse: temple| fortressonDemesne channelsessenseThroughTokencalled'heathstone'\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:hearthstone",
+      "entry": "{\"label\":\"hearthstone\",\"category\":\"other\",\"trigger\":\"/hearthstone/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• Hearthstone: magicaltokenfromaManseThat channels essenceTo wielder& grants supernaturalpower\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:First Age",
+      "entry": "{\"label\":\"First Age\",\"category\":\"other\",\"trigger\":\"/First Age/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•'First Age'AKA'Golden Age':timefromfallto TitansToUsurpation,whenmen wieldedgreatmagicItageof enlightenment,peace,and discovery,yetended horror, murder,war.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Age of Sorrows",
+      "entry": "{\"label\":\"Age of Sorrows\",\"category\":\"other\",\"trigger\":\"/Age of Sorrows/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•'Second Age'AKA'Age of Sorrows':current eraSinceTheusurpation,where mortalsandExaltedwarAmid ruinsFirstAge.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Second Breath",
+      "entry": "{\"label\":\"Second Breath\",\"category\":\"other\",\"trigger\":\"/Second Breath/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•Second breath:The momentwhere mortalis chosenandbecomseExalted\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Shogunate",
+      "entry": "{\"label\":\"Shogunate\",\"category\":\"other\",\"trigger\":\"/Shogunate/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• Shogunate:Dragon-Bloodmilitary dictatorship ruledaftertheusurpationit destroyedbyGreatContagionitmarkedby endemic warfarebetweenDragon-BloodedDaimyos catastrophiclossOfFirstAgeMagic.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:sorcery",
+      "entry": "{\"label\":\"sorcery\",\"category\":\"other\",\"trigger\":\"/sorcery/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• sorcery:codified& rigidsystemof shaping essenceToMagic.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:spirit",
+      "entry": "{\"label\":\"spirit\",\"category\":\"other\",\"trigger\":\"/spirit/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•spirit: divine beingsOf essenceandwill. Gods,elementals, demons,and ghostsareall spirits.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:threshold",
+      "entry": "{\"label\":\"threshold\",\"category\":\"location\",\"trigger\":\"/threshold/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• threshold:all Creationbetween Blessed IsleandThe Wyld.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:usurpation",
+      "entry": "{\"label\":\"usurpation\",\"category\":\"other\",\"trigger\":\"/usurpation/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•usurpationAKA'the great betrayal':whenThedragon-bloodedandtheir allies overthrew SolarsThisendedFirstAgeandledtoGreatContagion.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Wyld",
+      "entry": "{\"label\":\"Wyld\",\"category\":\"other\",\"trigger\":\"/Wyld/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•'The Wyld': Primordial chaos& entropyitHomeToTheFair Folk;the primal clay Titansformed Creation; Wyldheldbackbythe Elemental Poles.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:wyld hunt",
+      "entry": "{\"label\":\"wyld hunt\",\"category\":\"other\",\"trigger\":\"/wyld hunt/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•'wyld hunt':groupofdragon-bloodedbandtogethertoKillanathema\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:creation",
+      "entry": "{\"label\":\"creation\",\"category\":\"location\",\"trigger\":\"/creation/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• Creation:flatworld floatingonSeaof chaoscalledthe Wyld\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:mortal",
+      "entry": "{\"label\":\"mortal\",\"category\":\"other\",\"trigger\":\"/mortal/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• Mortal:someone untouchedby essenceonly mortalscan receive'second breath'& becomeExalted.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:god",
+      "entry": "{\"label\":\"god\",\"category\":\"faction\",\"trigger\":\"/god/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•god:spirit divine representativeofaplace,thing,orconcept; lesser godsrepresentMinorThings; greatestof godsareIncarnae:'The Unconquered Sun', Luna,and'The Five Maidens'ruleoverall gods.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:ghost",
+      "entry": "{\"label\":\"ghost\",\"category\":\"faction\",\"trigger\":\"/ghost/g\",\"status\":\"undead\",\"pronoun\":\"unknown\",\"main\":\"•ghost:deadSoul pulledfromcycleof reincarnationSince lingering attachmentsToTheworld|darkmagic|inauspiciousdeath| improper burial,they dwellinmacabre&foreboding UnderworldyetSomefindtheirwaybackto Creation.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:elemental",
+      "entry": "{\"label\":\"elemental\",\"category\":\"faction\",\"trigger\":\"/elemental/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• elemental:spirit arisingfromfive elementsTheycycle essenceThrough Creationtheyphysical beings\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:demon",
+      "entry": "{\"label\":\"demon\",\"category\":\"faction\",\"trigger\":\"/demon/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•demon:spiritof majesty&guilethey swornememiesofExaltedyet trappedinServicebyAncient oaththeyfrom Malfeasand serveYozis.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:deathlord",
+      "entry": "{\"label\":\"deathlord\",\"category\":\"faction\",\"trigger\":\"/deathlord/g\",\"status\":\"undead\",\"pronoun\":\"unknown\",\"main\":\"•deathlord:hand- chosen servantsOfTheneverborn,deathlordsmayBeMostpowerful beingsOfSecondAgeTheycommand undead legions& untold horrors.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Fair Folk",
+      "entry": "{\"label\":\"Fair Folk\",\"category\":\"faction\",\"trigger\":\"/Fair Folk/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•Fair FolkAKA FaeAKA Rakasha:bornofwyldtheyRavenous, beautiful,and immortaltheytakebyforce|seductiontheySimilarToHumanmenandwomenyetnever mistakenfor mortals\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Exigent",
+      "entry": "{\"label\":\"Exigent\",\"category\":\"other\",\"trigger\":\"/Exigent/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•exigent:Exalt chosenby lesserGodthroughExigenceeachunique powers&abilities\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:liminal",
+      "entry": "{\"label\":\"liminal\",\"category\":\"faction\",\"trigger\":\"/liminal/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•liminal:patchworkExaltmadeof corpsepartsAndimbuedby passioninstead godsTheyundyingyetalways bondedwithcreatororlivingSoulElseThey slideinto ruinand undeath.TheyhuntThedeadwho treaduponThelandsOfTheliving.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:sidereal",
+      "entry": "{\"label\":\"sidereal\",\"category\":\"faction\",\"trigger\":\"/sidereal/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•Sidereal:Exalt chosenof'The Five Maidens'They stewardsOf fateThey Heaven'sagentsin Creation;duringFirstAgeThey served Solarsas advisorsyetUltimately betrayed SolarsThiscalledUsurpation.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:abyssal",
+      "entry": "{\"label\":\"abyssal\",\"category\":\"faction\",\"trigger\":\"/abyssal/g\",\"status\":\"alive\",\"pronoun\":\"her\",\"main\":\"• Abyssal:Exaltswho appearedwhen Scarlet Empress’s disappearanceThey championsofdeathlordsTheybringghost-fire& doomtheyyysteriousharbingers, warrior- poetsand sacred priestsTheymatchSolarExaltedinSinglecombat.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Dragon-Blood",
+      "entry": "{\"label\":\"Dragon-Blood\",\"category\":\"faction\",\"trigger\":\"/Dragon-Blood/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•Dragon-BloodAKA Terrestrial:Exalt chosenof'The Five Elemental Dragons'They weakerthanThe celestialExaltedbutmore numerousTheirpower passesonTo progenytheyDrawpowerfromfive elements\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:lunar",
+      "entry": "{\"label\":\"lunar\",\"category\":\"faction\",\"trigger\":\"/lunar/g\",\"status\":\"alive\",\"pronoun\":\"unknown\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:lunar",
+      "entry": "{\"main\":\"• Lunar:Exalt chosenof Luna,the LunarsareShapechangers.TheUsurpation chasedthemtoTheedgeofTheworld,wheretheyNowruletheirOwn tribalDominions, wagingunceasingwaragainsttheFair FolktooneSideandthe RealmtoTheother.The LunarslookuponTheSolarExalted’sreturnwith uncertain hearts—duringtheFirstAge,the Lunarswerethe slaves,seconds,andconsortsToTheSolarExalted.That bondhasbeenbroken,butmanyyetFearaReturnToServitude.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:no moon",
+      "entry": "{\"label\":\"no moon\",\"category\":\"faction\",\"trigger\":\"/no moon/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•noMoon caste: Lunar casteofshapeshifter mysticsand sorcerers\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:changing moon",
+      "entry": "{\"label\":\"changing moon\",\"category\":\"faction\",\"trigger\":\"/changing moon/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•changingmoon caste: Lunar casteofshapeshifterswho relyonGuile, cunning, charisma,animalmagnetism\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:full moon",
+      "entry": "{\"label\":\"full moon\",\"category\":\"faction\",\"trigger\":\"/full moon/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•fullmoon caste: Lunar casteofshapeshifterswho relyonrawphysical prowessToanswer challengesThey warriors, athletes, survivors\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:wood aspect",
+      "entry": "{\"label\":\"wood aspect\",\"category\":\"faction\",\"trigger\":\"/wood aspect/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•wood aspect:Terrestrial caste beautifulasorchidYet deadlyasnightshadeTheydeep affinitywithlivingworld\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:water aspect",
+      "entry": "{\"label\":\"water aspect\",\"category\":\"faction\",\"trigger\":\"/water aspect/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•water aspect:Terrestrial caste mastersOf adaptation& Uncharted pathsTheydeepasOcean& relentlessas flood\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:fire aspect",
+      "entry": "{\"label\":\"fire aspect\",\"category\":\"faction\",\"trigger\":\"/fire aspect/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•fire aspect:Terrestrial casteof passionandenergyincarnatebothon battlefield&atcourt\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:earth aspect",
+      "entry": "{\"label\":\"earth aspect\",\"category\":\"faction\",\"trigger\":\"/earth aspect/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•earth aspect:Terrestrial casteThey bastionsof patience, stability,resillience\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:air aspect",
+      "entry": "{\"label\":\"air aspect\",\"category\":\"faction\",\"trigger\":\"/air aspect/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•air aspect:Terrestrial casteTheyquickthoughtand contemplateionthey subtleas breezeyetDynamicasThunderstorm\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:consort",
+      "entry": "{\"label\":\"consort\",\"category\":\"other\",\"trigger\":\"/consort/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•consort: spy& diplomatTheir specialtysoftpower.They whisper secretsinto powerful earsOverhear secretsTheytradeknowledgefor favors& influence\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:yozi",
+      "entry": "{\"label\":\"yozi\",\"category\":\"faction\",\"trigger\":\"/yozi/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•yozi:demon princes&lordsOfHellthey enemiesof godsTheyonce TitansThey defeatedbyExaltsnow imprisonedin MalfeasTheyLookat Creationwithlust& hatred\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:neverborn",
+      "entry": "{\"label\":\"neverborn\",\"category\":\"faction\",\"trigger\":\"/neverborn/g\",\"status\":\"dead\",\"pronoun\":\"unknown\",\"main\":\"•neverborn:former Titans slain becameNeverbornThey vast ghosts dreamingin deepestpartof Underworldtheir whispersshape afterlifeandtheirMagicempowersdeathlordsand AbyssalExaltedtheyseekto dominatecreation|destroyit\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:immaculate",
+      "entry": "{\"label\":\"immaculate\",\"category\":\"faction\",\"trigger\":\"/immaculate/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•ImmaculateOrder:state religionofThe Realmthey teachcycleof reincarnation leads upwardtoTheFive Elemental DragonsTheyalso teach spiritsare celestialfunctionaries,and worshipis dangerousactivityonlyforDragon-bloodedImmaculate monksarereknown martial artists\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:guild",
+      "entry": "{\"label\":\"guild\",\"category\":\"faction\",\"trigger\":\"/guild/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•The Guild: associationof mortal tradesmen&plutocratsit spans Creationmoving drugs& slaves&SundriesAcross CreationpowerfulEconomicforceThey governedmostlyby mortalsThey maintainSilverstandardand promoteeconomic stability\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:the realm",
+      "entry": "{\"label\":\"the realm\",\"category\":\"faction\",\"trigger\":\"/the realm/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•The Realm:mightiest empirein Creationtheirhome Blessed Islethey ruledbythe Scarlet DynastytheycontrolHundredsOfsatrapiesAcross threshold,theyextort taxesand tributeFrom civilizedworld\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:fortitude",
+      "entry": "{\"label\":\"fortitude\",\"category\":\"location\",\"trigger\":\"/fortitude/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•Fortitude:prison fortress-cityinNearnorthwhere ruthlessriseToThetoplawby decreeThere tribesof prisonersToilin darkness harvesting plants& gemsfor gangsThatrunprisonitplaceWhere darkness worshiped,winteris hated,allmen believethey cursed&onlya heroiclifeand immortalDeathcanatonefor darkenedSoul\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:grieve",
+      "entry": "{\"label\":\"grieve\",\"category\":\"location\",\"trigger\":\"/grieve/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•Grieve:port-cityinNearnorthhomeToartisans, merchants, laborers,alchemistsmakersof'White Elixir'which grantsmacabre immortalityGrieve’s richestcitizenswhoHaveprocured Elixir recognizableby unusual pallor foreignerscomeToPurchase immortalityandtradeinThe Elixir’sreagents\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:lookshy",
+      "entry": "{\"label\":\"lookshy\",\"category\":\"location\",\"trigger\":\"/lookshy/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•Lookshy:greatEasterncitydatesbackto ShogunateitHomeTo Seventh Legiontheystill possessfew craftsmenwho maintainstoreofFirstAgeWeapons. Visitors cannotenterThe UpperCitywithout authorization.\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:white elixir",
+      "entry": "{\"label\":\"white elixir\",\"category\":\"other\",\"trigger\":\"/white elixir/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•white Elixir: grantsmacabre immortality preservingbody&SoulInInstantofdeath\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:seventh legion",
+      "entry": "{\"label\":\"seventh legion\",\"category\":\"faction\",\"trigger\":\"/seventh legion/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• seventh legion:pre- eminentmilitarypowerinThe'Scavenger Lands'\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:sijan",
+      "entry": "{\"label\":\"sijan\",\"category\":\"location\",\"trigger\":\"/sijan/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•Sijan:great tomb-cityatEdgeofEasternshadowlandfunaralistshere familiarwithallrites& ritualsrelatedtoDeathYettheirultimateService ensure ghosts retainwealth&statusitfeaturesgreat treasuresentombed in necropoli protectedby traps& guardians;LiminalExaltedhave alliedwithSijan\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:heaven",
+      "entry": "{\"label\":\"heaven\",\"category\":\"location\",\"trigger\":\"/heaven/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•Yu- ShanAKA Heaven: celestialcityofYu- ShanhomeTo godsandIncarnaeWho overseeManagementof Heaven& Creation& fateThroughgrand bureaucracySiderealExaltedcallitHome\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:underworld",
+      "entry": "{\"label\":\"underworld\",\"category\":\"location\",\"trigger\":\"/underworld/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• Underworld:landsOfdead floatingonvoidseaIt shattered reflectionof CreationitcapstoneoverTombsOfneverbornanywhoDie unabletoMoveon become trappedin Underworldwhere souls& essenceofdeadthingscongregateandgive riseToMaladyand horrorit kingdomofdeathlordsandinEverydirectionSpiresofaDeathlord’s Citadel\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:scavenger lands",
+      "entry": "{\"label\":\"scavenger lands\",\"category\":\"location\",\"trigger\":\"/scavenger lands/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•'Scavenger Lands': territoryinNearEastofThresholdthey proclaimindependencefromthe Realmthey resistedmultiple invasionsitsheartis'River Province'aRegioncontainingaSeriesofpowerful loosely alliedcity-statesliningthe mighty riversThatrunthroughheartof'Scavenger Lands'\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:malfeas",
+      "entry": "{\"label\":\"malfeas\",\"category\":\"location\",\"trigger\":\"/malfeas/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• MalfeasAKA Hell:nightmarish kingdomof brass&obsidianunder sickeninggreenSky Malfeas sitsoutside Creation surroundedby endless desertatendof eternityit imprisonsyoziswithdemon legionssince vanquishedbyExalted\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:blessed isle",
+      "entry": "{\"label\":\"blessed isle\",\"category\":\"location\",\"trigger\":\"/blessed isle/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•'The Blessed Isle':great island- continentcenterof Creationitoncehomeof godsandnowseatofThe Realm;verycenter PoleofEarth pierces heavensas'The Imperial Mountain'\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:pole of earth",
+      "entry": "{\"label\":\"pole of earth\",\"category\":\"location\",\"trigger\":\"/pole of earth/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•'The Pole of Earth':axisof Creationaroundwhichworld movesit dormantand steady balancing elementsOf Creationinto stable harmonyinEach directionalawayanotherpole’s influence grows strongeruntilrealityis rippedaway\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:shadowland",
+      "entry": "{\"label\":\"shadowland\",\"category\":\"other\",\"trigger\":\"/shadowland/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•Shadowland:where Underworld touches CreationthereNo barrierbetweenlifeanddeathandthelivingmay speakwiththeDeadleaveShadowlandduringdaytoenter CreationyetatnightenterThe Underworld\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:orichalcum",
+      "entry": "{\"label\":\"orichalcum\",\"category\":\"other\",\"trigger\":\"/orichalcum/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•orichalcum: magicalmaterial,superheavygoldattunedSolarExalted\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:jade",
+      "entry": "{\"label\":\"jade\",\"category\":\"other\",\"trigger\":\"/jade/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• Jade: magicalmaterial,stoneattunedDragon-blooded\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:starmetal",
+      "entry": "{\"label\":\"starmetal\",\"category\":\"other\",\"trigger\":\"/starmetal/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•starmetal: magicalmaterial,fromsky,attunedSiderealExalted\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:soulsteel",
+      "entry": "{\"label\":\"soulsteel\",\"category\":\"other\",\"trigger\":\"/soulsteel/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•Soulsteel: magicalmaterial,from Underworld,attuned AbyssalExalted\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:moonsilver",
+      "entry": "{\"main\":\"• moonsilver: magicalmaterial,fluidicSilverattuned LunarExalted\",\"label\":\"moonsilver\",\"pronoun\":\"unknown\",\"trigger\":\"/moonsilver/g\",\"category\":\"other\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:illuminated",
+      "entry": "{\"label\":\"illuminated\",\"category\":\"faction\",\"trigger\":\"/illuminated/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"•'Cult of the Illuminated': mysterycultthey teach mysterioussaviorswillreturnTheworldto righteousnessThey oppose'Immaculate Order'\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:charm",
+      "entry": "{\"label\":\"charm\",\"category\":\"other\",\"trigger\":\"/charm/g\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"main\":\"• charm:methodtochannel essenceThrough skills perform superhuman feats\"}",
+      "hidden": true
+    },
+    {
+      "keys": "#entry:Nightfall",
+      "entry": "{\"main\":\"Nightfall: orichalcumdaiklave\",\"seen\":\"NightbladeindestructibleGoldenorchalcumkatana\",\"label\":\"Nightfall\",\"topic\":\"Nightfall:weaponofSolarExaltitLegendarybladeofAncienthero.\",\"owners\":\"Chojin\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"trigger\":\"/Nightfall/g\",\"category\":\"thing\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:White Blossom",
+      "entry": "{\"main\":\"'White Blossom':leaderof'Bleeding Trees'\",\"seen\":\"'White Blossom'isRare beautyherhairred&long\",\"heard\":\"'White Blossom' speaksWithconfidenceandrespect\",\"label\":\"White Blossom\",\"topic\":\"White Blossom bisexual\",\"status\":\"alive\",\"pronoun\":\"her\",\"trigger\":\"/White Blossom/g\",\"category\":\"character\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:Bleeding Trees",
+      "entry": "{\"main\":\"Bleeding Trees:bandof thieves& mercenariesbasedinCowpai\",\"label\":\"Bleeding Trees\",\"topic\":\"Bleeding Trees:popularinCowpaiTheyroughyet compassionate\",\"pronoun\":\"unknown\",\"trigger\":\"/Bleeding Trees/g\",\"category\":\"faction\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:Golden Lotuses",
+      "entry": "{\"main\":\"Golden Lotuses:bandof pirates& CorsairsbasedinCowpai\",\"label\":\"Golden Lotuses\",\"topic\":\"Golden Lotuses: fearedinCowpaiThey ruthlessyetprofitminded\",\"pronoun\":\"unknown\",\"trigger\":\"/Golden Lotuses/g\",\"category\":\"faction\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:Chojin",
+      "entry": "{\"main\":\"Chojin:16♂night casteSolar\",\"seen\":\"Chojin eyesbrownhairblackhisleft shoulder tattoo triangleof3 daggershis robesblack silk carriesorichalcumdaiklave'Nightfall'\",\"label\":\"Chojin\",\"topic\":\"followersof'Immaculate Order'wouldcall ChojinanathemaHiswords& movments effortlessly smooth\",\"status\":\"alive\",\"pronoun\":\"him\",\"trigger\":\"/Chojin/g\",\"category\":\"character\",\"contacts\":\"Yinen\",\"property\":\"Nightfall\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:Yinen",
+      "entry": "{\"main\":\"• Yinen:36♀ pirateCaptainhedonistyetHardEdge\",\"seen\":\"• Yinen hairblack&long eyesbrownknifeScar abdomen\",\"label\":\"Yinen\",\"topic\":\"• Yinen ruthless pirate hard edged yet deep emotional hurt she naked her face covered semen\",\"status\":\"alive\",\"pronoun\":\"her\",\"trigger\":\"/Yinen/g\",\"category\":\"character\",\"contacts\":\"Chojin\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:Painted Lady",
+      "entry": "{\"main\":\"•Painted Lady: pirateShipdockedinCowpai\",\"seen\":\"•Painted Lady:100man brigantineWitha prow carved nudeWoman\",\"label\":\"Painted Lady\",\"topic\":\"•Painted Lady: pirateShipwithpoor reputation\",\"owners\":\"Katarina\",\"status\":\"alive\",\"pronoun\":\"her\",\"trigger\":\"/Painted Lady/g\",\"category\":\"thing\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:Vant",
+      "entry": "{\"main\":\"•Vant:♂quartermasterof'Painted Lady'\",\"seen\":\"•Vant:large&skilledfighter\",\"label\":\"Vant\",\"status\":\"alive\",\"pronoun\":\"him\",\"trigger\":\"/Vant/g\",\"category\":\"character\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:Katarina",
+      "entry": "{\"main\":\"• Katarina:♀ pirateCaptainof'Painted Lady'\",\"seen\":\"• Katarina hair flowing red eye green patch over right eye.\",\"heard\":\"•Katarina speaks like old salt.\",\"label\":\"Katarina\",\"topic\":\"• Katarina capable captain yet bad crew.\",\"status\":\"alive\",\"pronoun\":\"her\",\"trigger\":\"/Katarina/g\",\"category\":\"character\",\"contacts\":\"Woods\",\"property\":\"Painted Lady\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:Woods",
+      "entry": "{\"main\":\"• Woods:♂firstmateof'Painted Lady'\",\"label\":\"Woods\",\"status\":\"alive\",\"pronoun\":\"him\",\"trigger\":\"/Woods/g\",\"category\":\"character\",\"contacts\":\"Katarina\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:Yoju",
+      "entry": "{\"main\":\"•Yoju:80♂Sidereal chosenof Jupiter, Maidenof Secrets'\",\"label\":\"Yoju\",\"status\":\"alive\",\"pronoun\":\"him\",\"trigger\":\"/Yoju/g\",\"category\":\"character\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:docks",
+      "entry": "{\"label\":\"docks\",\"trigger\":\"/docks/g\",\"category\":\"location\",\"status\":false,\"pronoun\":\"unknown\",\"main\":\"docks full of ships, sailors, and dock workers\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:shacks",
+      "entry": "{\"label\":\"shacks\",\"trigger\":\"/shacks/g\",\"category\":\"location\",\"status\":false,\"pronoun\":\"unknown\",\"main\":\"shacks most residents of Cowpai live here\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:scarlet district",
+      "entry": "{\"label\":\"scarlet district\",\"trigger\":\"/scarlet district/g\",\"category\":\"location\",\"status\":false,\"pronoun\":\"unknown\",\"main\":\"scarlet district holds a keep and residences of many officials and diplomats\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:silver district",
+      "entry": "{\"label\":\"silver district\",\"trigger\":\"/silver district/g\",\"category\":\"location\",\"status\":false,\"pronoun\":\"unknown\",\"main\":\"silver district full of merchants and warehouses\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:military district",
+      "entry": "{\"label\":\"military district\",\"trigger\":\"/military district/g\",\"category\":\"location\",\"status\":false,\"pronoun\":\"unknown\",\"main\":\"military district where the soldiers and city guards reside and train\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:Cowpai",
+      "entry": "{\"main\":\"Cowpaiisportcityin'scavenger lands'onThegreatsea.\",\"seen\":\"Cowpai's dockshomeToMany merchant ships; governor'skeepin Scarletquarter amidst lavishwealth; soldiersOnEvery corneryet overlook pettycrime.\",\"areas\":\"docks, dregs, shacks, scarlet district, silver district, military district\",\"label\":\"Cowpai\",\"topic\":\"CowpaiisHomeTo smugglersand mercenaries.\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"trigger\":\"/Cowpai/g\",\"category\":\"location\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:dregs",
+      "entry": "{\"main\":\"dregs full of transients, prostitutes, taverns, inns\",\"areas\":\"Poisoned Blade\",\"label\":\"dregs\",\"status\":\"alive\",\"pronoun\":\"unknown\",\"trigger\":\"/dregs/g\",\"category\":\"location\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#entry:Poisoned Blade",
+      "entry": "{\"label\":\"Poisoned Blade\",\"trigger\":\"/Poisoned Blade/g\",\"category\":\"location\",\"status\":false,\"pronoun\":\"unknown\",\"main\":\"Poisoned Blade tavern in the Cowpai dregs\"}",
+      "hidden": false
+    },
+    {
+      "keys": "#title:leader of",
+      "entry": "{\"title\":\"leader of\",\"target\":{\"entry\":\"Bleeding Trees\",\"category\":\"faction\"},\"source\":{\"entry\":\"White Blossom\",\"category\":\"character\"}}",
+      "hidden": false
+    }
+  ]

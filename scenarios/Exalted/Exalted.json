@@ -1,557 +1,522 @@
 [
   {
     "hidden": false,
-    "keys": "immaculate,(solar|lunar|abyssal|anathema)#[l=3t=9S=3]",
-    "entry": "anathema ≡ Immaculate term for Solar/ Lunar/ Abyssal Exalted"
+    "keys": "anima",
+    "entry": "anima: invisible aura surrounding living things"
   },
   {
     "hidden": false,
-    "keys": "(anima|aura)#[l=9]",
-    "entry": "anima ≡ invisible aura surrounding living things"
+    "keys": "artifact",
+    "entry": "artifact: magic object forged of orichalcum|jade|soulsteel|moonsilver|starmetal"
   },
   {
     "hidden": false,
-    "keys": "Artifact#[l=3]",
-    "entry": "artifact ≡ An object imbued with magic and often forged of {orichalcum,jade, soulsteel, moonsilver,starmetal}"
+    "keys": "caste mark",
+    "entry": "caste mark: invisible mark on brow showing Exalt's caste"
   },
   {
     "hidden": false,
-    "keys": "(Caste),Mark#[l=3]",
-    "entry": "caste mark ≡ mark upon brow of Exalt displaying caste it invisible unless anima flares"
+    "keys": "celestial",
+    "entry": "celestial: Exalted champion of an Incarnae: Solar/Lunar/Sidereal"
   },
   {
     "hidden": false,
-    "keys": "(solar|lunar|sidereal|celestial)#[l=3]",
-    "entry": "Celestial ≡ Exalted champion of an Incarnae: Solar, Lunar, and Sidereal"
+    "keys": "charm",
+    "entry": "charm: method to channel essence through skills perform superhuman feats"
   },
   {
     "hidden": false,
-    "keys": "charm#[l=3]",
-    "entry": "charm ≡ Exalted magic"
+    "keys": "Exalt",
+    "entry": "Exalt: mortal chosen& blessed with power of gods"
   },
   {
     "hidden": false,
-    "keys": "(celestial|solar|lunar|sidereal|terrestrial|dragon-blood|chosen|exalt(ed)?)#[l=4]",
-    "entry": "Exalted ≡ mortal chosen& blessed they power source gods"
+    "keys": "daiklave",
+    "entry": "daiklave: iconic Exalted weapon each unique& forged from orichalcum<Solar>|jade<Dragon-Blood>|soulsteel<Abyssal>|moonsilver<Lunar>|starmetal<Sidereal>."
   },
   {
     "hidden": false,
-    "keys": "(Exalt|Solar|Lunar|Abyssal|Sidereal|Terrestrial|Dragon-blooded),Circle[l=5]",
-    "entry": "circle ≡ group of Exalted joined by oaths, pacts and sorcery"
+    "keys": "demesne",
+    "entry": "demesne: natural vortex of essence they often have manse to collect & refine essence"
   },
   {
     "hidden": false,
-    "keys": "(sword|daiklave)#[l=9]",
-    "entry": "daiklave ≡ iconic Exalted weapon each unique& often oversized, and forged from {Solar⇒orichalcum,Terrestrial⇒jade, Abyssal⇒ soulsteel, Lunar⇒ moonsilver,Sidereal⇒starmetal}. May call forth Evocations."
+    "keys": "dynast",
+    "entry": "dynast: dragon-blooded relative of Scarlet Empress they ruling class of the Realm"
   },
   {
     "hidden": false,
-    "keys": "demesne#[l=3t=9S=3]",
-    "entry": "demesne ≡ enchanted place is natural vortex of power they rich in essence they often have manse"
+    "keys": "essence",
+    "entry": "essence: current of energy moves through all things it source of magic & wonder"
   },
   {
     "hidden": false,
-    "keys": "Dynast#[l=9]",
-    "entry": "dynast ≡ dragon-blooded relative of Scarlet Empress they ruling class of the Realm"
+    "keys": "Exigence",
+    "entry": "Exigence: force of divine fire & inspiration created by The Unconquered Sun that lesser gods might have own Exalted champions."
   },
   {
     "hidden": false,
-    "keys": "(Elemental),Pole#[l=3t=6]",
-    "entry": "Elemental Pole ≡ one of five anchors that border the world and hold it together they ≡ Pole of Air in icy north/ Pole of Fire in south, Pole of Water in west, Pole of Wood in east. Pole of Earth on Blessed Isle"
+    "keys": "Dragons",
+    "entry": "Elemental Dragon: one of five children of Gaia they patrons of Dragon-Blooded they immense size and unfathomable power."
   },
   {
     "hidden": false,
-    "keys": "(pole of earth)|(imperial mountain)#[l=3]",
-    "entry": "'Pole of Earth' AKA 'Imperial Mountain' ≡ axis& central anchor of Creation it pierces heavens"
+    "keys": "Gaia",
+    "entry": "Gaia: only titan side with gods since love Luna she mother of The Five Elemental Dragons"
   },
   {
     "hidden": false,
-    "keys": "(essence)#[l=9]",
-    "entry": "essence ≡ current of energy moves through all things it source of magic & wonder"
-  },
-  {
-    "hidden": false,
-    "keys": "Exigence#[l=3]",
-    "entry": "Exigence ≡ force of divine fire and creative inspiration established by the Unconquered Sun so that lesser gods might have their own Exalted champions. Gods who tap the Exigence do not learn the secret of making Exalted, but through interaction with the Sun’s medium, they can create new kinds of Chosen from their own unique Essence. Depending on the personal power of the God, creating a chose might destroy them or they might manage to create some few at a time."
-  },
-  {
-    "hidden": false,
-    "keys": "Dragons#[l=3]",
-    "entry": "Elemental Dragons ≡ Children of Gaia and patrons of the Terrestrial Exalted. Each dragon embodies one of the five elements, and is a creature of immense size and unfathomable power. The Immaculate Order venerates the Elemental Dragons as the apotheosis of spiritual development of the Terrestrial Exalted."
-  },
-  {
-    "hidden": false,
-    "keys": "Gaia#[l=3]",
-    "entry": "Gaia ≡ The only Titan to side with the gods out of love for Luna. Mother of the Five Elemental Dragons"
-  },
-  {
-    "hidden": false,
-    "keys": "Contagion#[l=3]",
-    "entry": "Great Contagion ≡ A catastrophic plague of the past which brought low the Shogunate of the Dragon-Blooded. Crossing species boundaries, it killed nine out of every ten living creature: fish and fowl, man and insect, leaving endless fields of desolation. Those with mastery over Essence were resistant."
-  },
-  {
-    "hidden": false,
-    "keys": "Great House#[l=3]",
-    "entry": "Great House ≡ One of eleven Great Houses led by one of the Scarlet Empress' many spouses and children. In the past the Empress has engineered the fall of those she deemed too powerful, and raised new ones up in their place. Each House oversees a number of satrapies, raising legions for her armies, managing elements of her economy, and ruling portions of her Blessed Isle."
-  },
-  {
-    "hidden": false,
-    "keys": "Hearthstone",
-    "entry": "Hearthstone ≡ A token of solid Essence that forms in the heart of a Manse. Grants wielder a supernatural power. Rarely, hearthstones may be found in the wild, marking a place where a demesne had once existed."
+    "keys": "Contagion",
+    "entry": "Great Contagion: catastrophic plague which ended Shogunate. it killed 90% living creature yet Exalts & essence users resistant."
   },
   {
     "hidden": false,
     "keys": "Incarna",
-    "entry": "Incarna ≡ One of the greatest of gods and rules of Heaven. They are the gods of the great celestial bodies of the sky. One of: The Unconquered Sun, Luna, or The Five Maidens"
+    "entry": "Incarnae: greatest of gods and rulers of Heaven: 'The Unconquered Sun', Luna, 'The Five Maidens'"
   },
   {
     "hidden": false,
-    "keys": "Unconquered Sun#[l=3]",
-    "entry": "Unconquered Sun ≡ The greatest of the Incarnae, the Unconquered Sun is the god of virtue and will, war and enlightenment, the day and the night, and excellence. He is the King of Heaven and the patron of the Solar Exalted. It was he who led the gods in rebellion against their masters in the Time Before. At the height of the First Age, he turned his face from Creation in anger at the excesses of the Solars."
+    "keys": "Unconquered Sun",
+    "entry": "The Unconquered Sun: greatest Incarnae, king of Heaven, god of virtue & will, war & enlightenment, day & night, excellence he led rebellion against titans."
   },
   {
     "hidden": false,
-    "keys": "Luna#[l=3]",
-    "entry": "Luna ≡ An Incarna, the goddess of the moon, night, luck, iconoclasm, and change. A legendary huntress and trickster and patron of the Lunar Exalted."
+    "keys": "Luna",
+    "entry": "Luna: Incarna, goddess of moon, night, luck, iconoclasm, change."
   },
   {
     "hidden": false,
-    "keys": "(Mercury|Mars|Venus|Jupiter|Endings|Maidens)#[l=3]",
-    "entry": "Five Maidens ≡ Mercury, the Maiden of Journeys; Venus, the Maiden of Serenity; Mars, the Maiden of Battles; Jupiter, the Maiden of Secrets; and Saturn, the Maiden of Endings are the Five Maidens of Destiny. Among the Incarnae, they are the overseers of fate and destiny, of what will and must come to pass, and of what Heaven desires. They speak rarely and impart their secrets to few."
+    "keys": "Five Maidens",
+    "entry": "'The Five Maidens of Destiny': Mercury, Venus, Mars, Jupiter, Saturn they overseers of fate and destiny they speak rarely."
+  },
+  {
+    "hidden": false,
+    "keys": "Mercury",
+    "entry": "Mercury: maiden of journeys she Incarna"
+  },
+  {
+    "hidden": false,
+    "keys": "Mars",
+    "entry": "Mars: maiden of battles she Incarna."
+  },
+  {
+    "hidden": false,
+    "keys": "Venus",
+    "entry": "Venus: maiden of serenity she Incarna"
+  },
+  {
+    "hidden": false,
+    "keys": "Jupiter",
+    "entry": "Jupiter: maiden of secrets she Incarna"
+  },
+  {
+    "hidden": false,
+    "keys": "Saturn",
+    "entry": "Saturn: maiden of endings she Incarna"
   },
   {
     "hidden": false,
     "keys": "manse",
-    "entry": "Manse ≡ Sorcerous construction build on a Demesne to channels its power. Manses are often temples or fortresses. They form hearthstones and work magical effects, from the frivolous to the useful to the dangerous."
+    "entry": "manse: temple|fortress on demesne channels essense through token called 'heathstone'"
+  },
+  {
+    "hidden": false,
+    "keys": "hearthstone",
+    "entry": "hearthstone: magical token from a manse that channels essence to wielder & grants supernatural power"
   },
   {
     "hidden": false,
     "keys": "Scarlet Dynasty",
-    "entry": "Scarlet Dynasty ≡ The ruling class of the Realm, composed of those Dragon-Blooded who are descended from the Scarlet Empress or have married into her lineage. Organized into eleven Great Houses and many smaller houses."
+    "entry": "Scarlet Dynasty: ruling class of 'The Realm', composed of those Dragon-Blooded who are descended from the Scarlet Empress or have married into her lineage. Organized into eleven Great Houses and many smaller houses."
   },
   {
     "hidden": false,
-    "keys": "(emperor|empress|imperial|empire)#[l=3]",
-    "entry": "Scarlet Empress ≡ Unquestioned autarch of the Realm and the most powerful political ruler in Creation. Disappeared 5 years ago. Defeated the Fair Folk after the Great Contagion and seized power."
+    "keys": "First Age",
+    "entry": "'First Age' AKA 'Golden Age': time from fall to titans to usurpation, when men wielded great magic it age of enlightenment, peace, and discovery, yet ended horror, murder, war."
   },
   {
     "hidden": false,
-    "keys": "((First|Second|Fallen) Age)|(Age of Sorrows)#[l=5]",
-    "entry": "First Age ≡ The golden age between the Time Before and the Usurpation, when men wielded great magic. It was an age marked by periods of enlightenment, peace, and discovery, but it ended in horror, murder, war, and the Usurpation.>>>>\n<<Age of Sorrows ≡ The current era since the Usurpation is marked the Second Age of Man, where mortals and Exalted war amid the ruins of the First Age. The Lunars call this era the Fallen Age, while savants call it the Age of Sorrows."
+    "keys": "Age of Sorrows",
+    "entry": "'Second Age' AKA 'Age of Sorrows': current era since the usurpation, where mortals and Exalted war amid ruins First Age."
   },
   {
     "hidden": false,
-    "keys": "Second Breath[l=6]",
-    "entry": "Second breath ≡ The moment of Exaltation"
+    "keys": "Second Breath",
+    "entry": "Second breath: The moment where mortal is chosen and becomse Exalted"
   },
   {
     "hidden": false,
-    "keys": "Shogunate[l=3]",
-    "entry": "Shogunate ≡ Military dictatorship set up by the Dragon-Blooded after the Usurpation. Destroyed by the Great Contagion. The Shogunate was marked by endemic warfare between Dragon-Blooded daimyos and the catastrophic loss of First Age magic."
+    "keys": "Shogunate",
+    "entry": "Shogunate: Dragon-Blood military dictatorship ruled after the usurpation it destroyed by Great Contagion it marked by endemic warfare between Dragon-Blooded daimyos catastrophic loss of First Age magic."
   },
   {
     "hidden": false,
-    "keys": "(sorcerer|sorcery)#[l=3]",
-    "entry": "sorcery ≡ A codified and rigid system of channeling Essence into magic. A given spell works identically for any with the power to cast it"
+    "keys": "sorcery",
+    "entry": "sorcery: codified & rigid system of shaping essence to magic."
   },
   {
     "hidden": false,
-    "keys": "spirit#[l=3]",
-    "entry": "spirit ≡ Divine beings of Essence and will. Gods, elementals, demons, and ghosts are all spirits."
+    "keys": "spirit",
+    "entry": "spirit: divine beings of essence and will. Gods, elementals, demons, and ghosts are all spirits."
   },
   {
     "hidden": false,
-    "keys": "Threshold#[l=3]",
-    "entry": "Threshold ≡ All parts of Creation that are between the Blessed Isle and the wyld."
+    "keys": "threshold",
+    "entry": "threshold: all Creation between Blessed Isle and The Wyld."
   },
   {
     "hidden": false,
-    "keys": "Usurpation#[l=3]",
-    "entry": "Usurpation ≡ Also called the Great Betrayal, refers to the event in which the dragon-blooded and their allies overthrew the Solar Exalted. The event weakened the world and led to the Great Contagion"
+    "keys": "usurpation",
+    "entry": "usurpation AKA 'the great betrayal': when the dragon-blooded and their allies overthrew Solars this ended First Age and led to Great Contagion."
   },
   {
     "hidden": false,
-    "keys": "Wyld(?!\\s+Hunt)#[l=3]",
-    "entry": "Wyld ≡ The primordial chaos and entropy which is home to the Fair Folk, and from which the the Titans raised up Creation. It is held back by the elemental poles, but pockets of wyld remain in Creation remnants of the Great Contagion."
+    "keys": "Wyld",
+    "entry": "'The Wyld': primordial chaos & entropy it home to the Fair Folk; the primal clay titans formed Creation; Wyld held back by the Elemental Poles."
   },
   {
     "hidden": false,
-    "keys": "Wyld Hunt#[l=3]",
-    "entry": "A Wyld Hunt is a group of Dragon-Blooded who band together to hunt and kill the Anathema. The Wyld Hunt has been weakened by the impending war for the Realm’s throne. It will not stay that way."
+    "keys": "wyld hunt",
+    "entry": "'wyld hunt': group of dragon-blooded band together to kill anathema"
   },
   {
     "hidden": false,
-    "keys": "creation#[l=3]",
-    "entry": "Creation: Epic Fantasy; Creation ≡ Flat world floating on a sea of chaos called the Wyld."
+    "keys": "creation",
+    "entry": "Creation: flat world floating on sea of chaos called the Wyld"
   },
   {
     "hidden": false,
-    "keys": "mortal#[l=3]",
-    "entry": "Mortal ≡ Someone of Creation untouched by Essence. Only mortals can receive the Second Breath and become Exalted."
+    "keys": "mortal",
+    "entry": "Mortal: someone untouched by essence only mortals can receive 'second breath' & become Exalted."
   },
   {
     "hidden": false,
-    "keys": "god#[l=3]",
-    "entry": "God ≡ A spirit acting as a divine representative of a place, thing, or concept. Lesser gods represent minor things such as a field or well. The greatest of the gods are the Incarnae - The Unconquered Sun, Luna, and the Five Maidens, who rule over all gods."
+    "keys": "god",
+    "entry": "god: spirit divine representative of a place, thing, or concept; lesser gods represent minor things; greatest of gods are Incarnae: 'The Unconquered Sun', Luna, and 'The Five Maidens' rule over all gods."
   },
   {
     "hidden": false,
-    "keys": "ghost#[l=3]",
-    "entry": "Ghost ≡ A dead soul pulled out of the cycle of reincarnation by lingering attachments to the world, dark magic, an inauspicious death, or improper burial. Most such shades dwell in the macabre and foreboding Underworld, but some find their way back up to Creation, particularly in shadowlands."
+    "keys": "ghost",
+    "entry": "ghost: dead soul pulled from cycle of reincarnation since lingering attachments to the world|dark magic|inauspicious death|improper burial, they dwell in macabre& foreboding Underworld yet some find their way back to Creation."
   },
   {
     "hidden": false,
-    "keys": "elemental#[l=3]",
-    "entry": "Elemental ≡ A spirit arising from the five elements of the natural world. Elementals labor to cycle Essence through Creation. They are physical beings that live in the same world as men and beasts."
+    "keys": "elemental",
+    "entry": "elemental: spirit arising from five elements they cycle essence through Creation they physical beings"
   },
   {
     "hidden": false,
-    "keys": "demon#[l=3]",
-    "entry": "Demon ≡ A spirit of alien majesty and deadly guile, demons are the sworn ememies of the Exalted, despite being trapped in service to them by an ancient oath. They hail from the realm of Malfeas and serve the Yozis."
+    "keys": "demon",
+    "entry": "demon: spirit of majesty & guile they sworn ememies of Exalted yet trapped in service by ancient oath they from Malfeas and serve yozis."
   },
   {
     "hidden": false,
-    "keys": "deathlord#[l=3]",
-    "entry": "Deathlord ≡ Hand-chosen servants of the Neverborn, Deathlords may be the most powerful beings to walk the world in this Age. They command undead legions and untold horrors. Deathlords are behind the emergence of the Abyssal Exalted."
+    "keys": "deathlord",
+    "entry": "deathlord: hand-chosen servants of the neverborn, deathlords may be most powerful beings of Second Age they command undead legions & untold horrors."
   },
   {
     "hidden": false,
-    "keys": "(Fair Folk|Fae|Rakasha)#[l=3]",
-    "entry": "Fair Folk ≡ Also called Fae and Rakasha, Fair Folk are born of the chaos beyond the world - ravenous, beautiful, and immortal. They take whatever they please by force or seduction. Raksha seem similar to men and women, but could never be mistaken for mortals. The Fair Folk hate Creation."
+    "keys": "Fair Folk",
+    "entry": "Fair Folk AKA Fae AKA Rakasha: born of wyld they ravenous, beautiful, and immortal they take by force|seduction they similar to human men and women yet never mistaken for mortals"
   },
   {
     "hidden": false,
-    "keys": "Exigent#[l=3]",
-    "entry": "Exigent ≡ A category of Exalt chosen by lesser gods and empowered by the Exigence. Each Exigent is unique in powers and abilities."
+    "keys": "Exigent",
+    "entry": "exigent: Exalt chosen by lesser god through Exigence each unique powers & abilities"
   },
   {
     "hidden": false,
-    "keys": "Liminal#[l=3]",
-    "entry": "Liminal ≡ Liminal Exalts are patchwork monsters formed of corpse parts and imbued by passion rather than chosen by the gods. They are undying but must always be bonded with their creator or another living soul, or inexorably slide into ruin and undeath. They hunt the dead who tread upon the lands of the living."
+    "keys": "liminal",
+    "entry": "liminal: patchwork Exalt made of corpse parts and imbued by passion instead gods they undying yet always bonded with creator or living soul else they slide into ruin and undeath. They hunt the dead who tread upon the lands of the living."
   },
   {
     "hidden": false,
-    "keys": "sidereal#[l=3]",
-    "entry": "Sidereal ≡ An Exalt chosen by one of the Five Maidens, Sidereals are the stewards of fate and Heaven's agents in Creation. In the First Age, they served the Solars as advisors, but they ultimately betrayed the Solars - an event called the Usurpation. They murdered the Solars and raised up the Terrestrial Exalts and the Immaculate Order as a system of control. The Bronze Faction seeks to murder returning Solars, while the Gold Faction supports their return."
+    "keys": "sidereal",
+    "entry": "Sidereal: Exalt chosen of 'The Five Maidens' they stewards of fate they Heaven's agents in Creation; during First Age they served Solars as advisors yet ultimately betrayed Solars this called Usurpation."
   },
   {
     "hidden": false,
-    "keys": "abyssal#[l=3]",
-    "entry": "Abyssal ≡ Strange new Exalts who appeared at the same time as the Scarlet Empress’s disappearance, the Abyssals have emerged from the Underworld as champions of the Deathlords. They come with the old laws of the dead, bringing ghost-fire and doom wherever they walk. Mysterious harbingers, warrior-poets and sacred priests, the Abyssal Exalted have rocked the world by slaying Dragon-Blooded, Exigents, and even Lunar Exalted, and each is easily a match in single combat to one of the Solar Exalted."
+    "keys": "abyssal",
+    "entry": "Abyssal: Exalts who appeared when Scarlet Empress’s disappearance they champions of deathlords they bring ghost-fire & doom they yysterious harbingers, warrior-poets and sacred priests they match Solar Exalted in single combat."
   },
   {
     "hidden": false,
-    "keys": "(terrestrial|dragon-?blood(ed)?)#[l=3]",
-    "entry": "Dragon-blooded ≡ The Chosen of the Five Elemental Dragons, and also known as Terrestrial Exalted, Dragon-Blooded are weaker than the Celestial Exalted but more numerous. Their power does not reincarnate, but passes on through the blood. They draw their power from the five elements. The Dragon-Blooded were convinced by the Sidereals to rise up and murder the Solar Exalted, an event that ended the First Age."
+    "keys": "Dragon-Blood",
+    "entry": "Dragon-Blood AKA Terrestrial: Exalt chosen of 'The Five Elemental Dragons' they weaker than the celestial Exalted but more numerous their power passes on to progeny they draw power from five elements"
   },
   {
     "hidden": false,
-    "keys": "lunar#[l=3]",
-    "entry": "Lunar ≡ The Chosen of Luna, the Lunars are shapechangers. The Usurpation chased them to the edge of the world, where they now rule their own tribal dominions, waging unceasing war against the Fair Folk to one side and the Realm to the other. The Lunars look upon the Solar Exalted’s return with uncertain hearts—during the First Age, the Lunars were the slaves, seconds, and consorts to the Solar Exalted. That bond has been broken, but many yet fear a return to servitude."
+    "keys": "lunar",
+    "entry": "Lunar: Exalt chosen of Luna, the Lunars are shapechangers. The Usurpation chased them to the edge of the world, where they now rule their own tribal dominions, waging unceasing war against the Fair Folk to one side and the Realm to the other. The Lunars look upon the Solar Exalted’s return with uncertain hearts—during the First Age, the Lunars were the slaves, seconds, and consorts to the Solar Exalted. That bond has been broken, but many yet fear a return to servitude."
   },
   {
     "hidden": false,
-    "keys": "solar#[l=3]",
-    "entry": "Solar ≡ The mightiest of the Exalted, Chosen by the Unconquered Sun, the Solars are mortals with great potential and ambition gifted with the power to fully realize their own excellence. They are without peer. In the First Age, they served as the generals of the Exalted armies. Through fire, combat, and peacemaking, they became rulers. Over time the Great Curse drove them mad. The Solars were overthrown during the Usurpation, but now they have returned to try to save Creation from doom."
+    "keys": "daybreak",
+    "entry": "daybreak caste: Abyssal cast of craftsman, necrosurgeons, soul-forgers they know forbidden lore of Underworld and masters of necromancy"
   },
   {
     "hidden": false,
-    "keys": "daybreak#[l=3]",
-    "entry": "Daybreak Caste ≡ An Abyssal Exalt of the Daybreak Caste is a craftsman, necrosurgeon, or forger of souls. Wise in the forbidden lore of the Underworld and absolute masters of necromancy"
+    "keys": "dusk",
+    "entry": "dusk caste: Abyssal cast of vicious warriors, elegant duelists, battlefield reapers"
   },
   {
     "hidden": false,
-    "keys": "dusk#[l=3]",
-    "entry": "Dusk Caste ≡ An Abyssal Exalt of the Dusk Caste is a vicious warrior, elegant duelist, or a battlefield reaper"
+    "keys": "midnight",
+    "entry": "midnight caste: Abyssal caste of evangelists of the grave, speakers for ancestor cults, lords of dead."
   },
   {
     "hidden": false,
-    "keys": "midnight#[l=3]",
-    "entry": "Midnight Caste ≡ An Abyssal Exalt of the Midnight Caste is an evangelist of the grave, speaker for the ancestor cult, or a lord of the dead."
+    "keys": "eclipse",
+    "entry": "eclipse caste: Solar caste of rangers, diplomats, bureaucrats"
   },
   {
     "hidden": false,
-    "keys": "eclipse#[l=3]",
-    "entry": "Eclipse Caste ≡ A Solar Exalt of the Eclipse Caste is a ranger, diplomat, or bureaucrat. skills{Athletics, Investigation, Stealth, Larceny, Carousing}"
+    "keys": "night",
+    "entry": "night caste: Solar caste of investigators, spies, assassins"
   },
   {
     "hidden": false,
-    "keys": "night#[l=3]",
-    "entry": "Night Caste ≡ A Solar Exalt of the Night Caste is an investigator, spy, or assassin. SKILLS: Athletics, Investigation, Stealth, Larceny, Carousing"
+    "keys": "twilight",
+    "entry": "twilight caste: Solar caste of scholars, craftpersons, and occultists"
   },
   {
     "hidden": false,
-    "keys": "twilight#[l=3]",
-    "entry": "Twilight Caste ≡ A Solar Exalt of the Twilight Caste is a scholar, craftperson, or occultist. SKILLS: Crafting, Investigation, Lore, Occult"
+    "keys": "zenith",
+    "entry": "zenith caste: Solar caste of priests, prophets, orators"
   },
   {
     "hidden": false,
-    "keys": "zenith#[l=3]",
-    "entry": "Zenith Caste ≡ A Solar Exalt of the Zenith Caste is a priest, prophet, or orator. SKILLS: Athletics, Lore, Survival, War"
+    "keys": "dawn",
+    "entry": "dawn caste: Solar caste of soldiers, warriors, armsmasters, generals"
   },
   {
     "hidden": false,
-    "keys": "dawn#[l=3]",
-    "entry": "Dawn Caste ≡ A Solar Exalt of the Dawn Caste is a soldier, warrior, armsmaster, or general. SKILLS: Ranged Fighting, Armed Fighting, Unarmed Fighting, War"
+    "keys": "no moon",
+    "entry": "no moon caste: Lunar caste of shapeshifter mystics and sorcerers"
   },
   {
     "hidden": false,
-    "keys": "(monk|brother|sister)#[l=3]",
-    "entry": "Monk ≡ A simple and humble priest, most often of the Immaculate Order or Cult of the Illuminated. They exemplify self-control and mastery over the body and martial arts."
+    "keys": "changing moon",
+    "entry": "changing moon caste: Lunar caste of shapeshifters who rely on guile, cunning, charisma, animal magnetism"
   },
   {
     "hidden": false,
-    "keys": "sorceror#[l=3]",
-    "entry": "Sorceror ≡ A student of the Great Work - a tradition dedicated to the study of ritual magic. Those who do not command Essence must find an external source to power their rituals."
+    "keys": "full moon",
+    "entry": "full moon caste: Lunar caste of shapeshifters who rely on raw physical prowess to answer challenges they warriors, athletes, survivors"
   },
   {
     "hidden": false,
-    "keys": "no moon#[l=3]",
-    "entry": "No Moon Caste ≡ A Lunar Exalt of the No Moon Caste is a shapeshifter mystic who relies on cleverness and wistom to outwit their opponents. They are the greatest sorcerers of the Lunar Exalted"
+    "keys": "wood aspect",
+    "entry": "wood aspect: Terrestrial caste beautiful as orchid yet deadly as nightshade they deep affinity with living world"
   },
   {
     "hidden": false,
-    "keys": "changing moon#[l=3]",
-    "entry": "Changing Moon Caste ≡ A Lunar Exalt of the Changing Moon Caste is a shapeshifter who relies on guile, cunning, charisma, and animal magnetism."
+    "keys": "water aspect",
+    "entry": "water aspect: Terrestrial caste masters of adaptation & uncharted paths they deep as ocean & relentless as flood"
   },
   {
     "hidden": false,
-    "keys": "full moon#[l=3]",
-    "entry": "Full Moon Caste ≡ A Lunar Exalt of the Full Moon Caste is a shapeshifter who relies on raw physical prowess to answer the challenges before them. They are warriors, athletes, and survivors"
+    "keys": "fire aspect",
+    "entry": "fire aspect: Terrestrial caste of passion and energy incarnate both on battlefield & at court"
   },
   {
     "hidden": false,
-    "keys": "wood aspect#[l=3]",
-    "entry": "Wood Aspect ≡ A Terrestrial Exalt of the Aspect of Wood is as beautiful as an orchid and deadly as nightshade. Deep affinity with the living world"
+    "keys": "earth aspect",
+    "entry": "earth aspect: Terrestrial caste they bastions of patience, stability, resillience"
   },
   {
     "hidden": false,
-    "keys": "water aspect#[l=3]",
-    "entry": "Water Aspect ≡ A Terrestrial Exalt of the Aspect of Water is a master of adaptation and uncharted paths. Deep as the ocean and relentless as a flood"
+    "keys": "air aspect",
+    "entry": "air aspect: Terrestrial caste they quick thought and contemplateion they subtle as breeze yet dynamic as thunderstorm"
   },
   {
     "hidden": false,
-    "keys": "fire aspect#[l=3]",
-    "entry": "Fire Aspect ≡ A Terrestrial Exalt of the Aspect of Fire is a dragon-blood of passion and energy incarnate both on the battlefield and at court"
+    "keys": "moonshadow caste",
+    "entry": "moonshadow caste: Abyssal caste of emissaries & lawgivers they formalize accords between living and dead"
   },
   {
     "hidden": false,
-    "keys": "earth aspect#[l=3]",
-    "entry": "Earth Aspect ≡ A Terrestrial Exalt of the Aspect of Earth is a bastion of patience and stability. Highly resilient"
+    "keys": "day caste",
+    "entry": "day caste: Abyssal caste of spys & assassins"
   },
   {
     "hidden": false,
-    "keys": "air aspect#[l=3]",
-    "entry": "Air Aspect ≡ A Terrestrial Exalt of the Aspect of Air is a hero of quick thought and contemplateion. Subtle as the breeze and dynamic as the thunderstorm"
+    "keys": "consort",
+    "entry": "consort: spy & diplomat their specialty soft power. They whisper secrets into powerful ears overhear secrets they trade knowledge for favors & influence"
   },
   {
     "hidden": false,
-    "keys": "moonshadow#[l=3]",
-    "entry": "Moonshadow Caste ≡ An Abyssal Exalt of the Moonshadow Caste is a master of the old laws which bind the Underworld. They are emissaries and formalize accords between the living and the dead."
+    "keys": "yozi",
+    "entry": "yozi: demon princes & lords of Hell they enemies of gods they once titans they defeated by Exalts now imprisoned in Malfeas they look at Creation with lust & hatred"
   },
   {
     "hidden": false,
-    "keys": "day#[l=3]",
-    "entry": "Day Caste ≡ An Abyssal Exalt of the Day Caste is a spy or assassin"
+    "keys": "neverborn",
+    "entry": "neverborn: former titans slain became neverborn they vast ghosts dreaming in deepest part of Underworld their whispers shape afterlife and their magic empowers deathlords and Abyssal Exalted they seek to dominate creation | destroy it"
   },
   {
     "hidden": false,
-    "keys": "(warrior|fighter)#[l=3]",
-    "entry": "Warrior ≡ A legendary fighter with great combat prowess and even greater honor. Warriors are combat powerhouses who attack their enemies with cold-blooded fury and grinding them to dust."
+    "keys": "outcaste",
+    "entry": "outcaste: Dragon-Bloods who not sworn to the Realm"
   },
   {
     "hidden": false,
-    "keys": "(rogue)#[l=3]",
-    "entry": "Rogue ≡ A master of stealth and cunning, rogues rarely stay in one place for long. They follow the winds of possibility and passion, and are attuned to the rhythms of chance and risk. In a world of chaos and anarchy, a rogue seizes opportunity where they find it."
+    "keys": "immaculate",
+    "entry": "Immaculate Order: state religion of the Realm they teach cycle of reincarnation leads upward to The Five Elemental Dragons they also teach spirits are celestial functionaries, and worship is dangerous activity only for dragon-blooded Immaculate monks are reknown martial artists"
   },
   {
     "hidden": false,
-    "keys": "(priest)#[l=3]",
-    "entry": "Priest ≡ One who entreats the gods in order to bargain for power, using that gift to heal their allies and smite the wicked."
+    "keys": "guild",
+    "entry": "The Guild: association of mortal tradesmen & plutocrats it spans Creation moving drugs & slaves & sundries across Creation powerful economic force they governed mostly by mortals they maintain silver standard and promote economic stability"
   },
   {
     "hidden": false,
-    "keys": "(diplomat|ambassador)#[l=3]",
-    "entry": "Diplomat ≡ A specialist in forging order from chaos through treaties and bargains. They maintain good relations between city-state and negotiate treaties to end bloodshed between the Realm and its neighbors."
+    "keys": "illuminated",
+    "entry": "'Cult of the Illuminated': mystery cult they teach mysterious saviors will return the world to righteousness they oppose 'Immaculate Order'"
   },
   {
     "hidden": false,
-    "keys": "(consort|concubine)#[l=3]",
-    "entry": "Consort ≡ Part spy and part diplomat, the consort's specialty is soft power. They whisper secrets into powerful ears overhear the secrets of powerful mouths, and trade knowledge for influence. A good consort must also be able to defend themselves because their favor must come at a price."
+    "keys": "the realm",
+    "entry": "The Realm: mightiest empire in Creation their home Blessed Isle they ruled by the Scarlet Dynasty they control hundreds of satrapies across threshold, they extort taxes and tribute from civilized world"
   },
   {
     "hidden": false,
-    "keys": "(soldier)#[l=3]",
-    "entry": "Soldier ≡ The backbone of the Realm's hard power. Soldiers are highly disciplined and masters of teamwork. A good soldier is a master of siegecraft and warcraft and the tactical use of allies and terrain."
+    "keys": "fortitude",
+    "entry": "Fortitude: prison fortress-city in near north where ruthless rise to the top law by decree there tribes of prisoners toil in darkness harvesting plants & gems for gangs that run prison it place where darkness worshiped, winter is hated, all men believe they cursed & only a heroic life and immortal death can atone for darkened soul"
   },
   {
     "hidden": false,
-    "keys": "yozi#[l=3]",
-    "entry": "Yozi ≡ Demon princes and lords of Hell, the Yozis are the enemies of the gods, who peer out at Creation with lust and hatred. Once they were the masters of the universe, but fell to the might of the Exalted. Those of them who were slain by the Solars became the Neverborn. The Yozis are imprisoned in a blasted kingdom of iron and black marble beneath a cold green sun, called Malfeas."
+    "keys": "grieve",
+    "entry": "Grieve: port-city in near north home to artisans, merchants, laborers, alchemists makers of 'White Elixir' which grants macabre immortality Grieve’s richest citizens who have procured elixir recognizable by unusual pallor foreigners come to purchase immortality and trade in the elixir’s reagents"
   },
   {
     "hidden": false,
-    "keys": "Neutral",
-    "entry": "Neutral: Many mortals hold only nominal allegiance to a hierarchy. Some are autocrats who rule in their own name. Most are common folks who care more about living day-to-day than any particular allegiance. They observe the rules of the Realm one day, and if the Realm is pushed out by a shadowland then they follow a deathlord the next day."
+    "keys": "white elixir",
+    "entry": "white elixir: grants macabre immortality preserving body & soul in instant of death"
   },
   {
     "hidden": false,
-    "keys": "neverborn#[l=3]",
-    "entry": "Neverborn ≡ Through the Exalted the enemies of the gods were slain and became the Neverborn, vast ghosts dreaming in the deepest part of the Underworld. Their whispers shape the afterlife, and their magic empowers the Deathlords and the Abyssal Exalted. They were the masters of the universe until the gods raised champions against them. Whether they seek to drag the world into death so they can rule it once more, or obliterate it entirely to escape its fetters and find a final rest, none can say."
+    "keys": "lookshy",
+    "entry": "Lookshy: great eastern city dates back to Shogunate it home to Seventh Legion they still possess few craftsmen who maintain store of First Age weapons. Visitors cannot enter the Upper City without authorization."
   },
   {
     "hidden": false,
-    "keys": "outcaste#[l=3]",
-    "entry": "Outcaste ≡ Dragon-Blooded who do not claim fealty to the Realm, either by membership in one of the Dynasty’s Great Houses, service as a monk of the Immaculate Order, or soldier in the legions are labeled outcastes."
+    "keys": "seventh legion",
+    "entry": "seventh legion: pre-eminent military power in the 'Scavenger Lands'"
   },
   {
     "hidden": false,
-    "keys": "immaculate#[l=3]",
-    "entry": "Immaculate Order ≡ The state religion of the Realm. The Immaculate Order teaches its adherents that the cycle of reincarnation leads in an upward spiral to oneness with the Five Elemental Dragons, from animals through mortals through Dragon-Blooded. It also teaches that spirits are celestial functionaries, and worship is a dangerous activity fit only for the Dragon-Blooded. Immaculate Monks are reknown martial artists."
+    "keys": "sijan",
+    "entry": "Sijan: great tomb-city at edge of eastern shadowland funaralists here familiar with all rites & rituals related to death yet their ultimate service ensure ghosts retain wealth & status it features great treasures entombed in necropoli protected by traps & guardians; Liminal Exalted have allied with Sijan"
   },
   {
     "hidden": false,
-    "keys": "guild#[l=3]",
-    "entry": "The Guild ≡ An association of mortal tradesmen and plutocrats, the Guild spans Creation, moving drugs, slaves, and sundries across the world. One of the most powerful economic forces, the Guild is governed almost entirely by mortals. They maintain the silver standard of the dinar and promote economic stability worldwide even as they push opium on entire nations and enslave entire tribes. Based out of the Scavenger Lands, they are at times opposed to the Realm and at times work in concert with it."
+    "keys": "heaven",
+    "entry": "Yu-Shan AKA Heaven: celestial city of Yu-Shan home to gods and Incarnae who oversee management of Heaven & Creation & fate through grand bureaucracy Sidereal Exalted call it home"
   },
   {
     "hidden": false,
-    "keys": "illuminated#[l=3]",
-    "entry": "Cult of the Illuminated ≡ Creation-wide mystery cult devoted to worship of mysterious saviors who will return the world to righteousness. Oppose the Immaculate Order."
+    "keys": "underworld",
+    "entry": "Underworld: lands of dead floating on void sea it shattered reflection of Creation it capstone over tombs of neverborn any who die unable to move on become trapped in Underworld where souls & essence of dead things congregate and give rise to malady and horror it kingdom of deathlords and in every direction spires of a deathlord’s citadel"
   },
   {
     "hidden": false,
-    "keys": "the realm#[l=3]",
-    "entry": "The Realm ≡ The mightiest empire in Creation, based on the Blessed Isle and ruled by the Scarlet Dynasty, the Realm controls hundreds of satrapies across the Threshold, nations under Dragon-Blooded boot. The Realm extorts taxes and tribute from almost the whole of the civilized world."
+    "keys": "shadowland",
+    "entry": "Shadowland: where Underworld touches Creation there no barrier between life and death and the living may speak with the dead leave shadowland during day to enter Creation yet at night enter the Underworld"
   },
   {
     "hidden": false,
-    "keys": "fortitude#[l=3]",
-    "entry": "Fortitude ≡ Neutral; Fortitude ≡ Prison fortress-city North; Strongest and most ruthless rise to the top; No law but what the strong decree. Tribes of prisoners toil in darkness, harvesting plants and gems for the gangs that run the prison. Fortitude is a place where the darkness is worshiped, the winter is hated, and every man believes he is cursed. Its people believe that only a heroic life and immortal death can atone for a darkened soul."
+    "keys": "scavenger lands",
+    "entry": "'Scavenger Lands': territory in near East of Threshold they proclaim independence from the Realm they resisted multiple invasions its heart is 'River Province' a region containing a series of powerful loosely allied city-states lining the mighty rivers that run through heart of 'Scavenger Lands'"
   },
   {
     "hidden": false,
-    "keys": "grieve#[l=3]",
-    "entry": "Grieve ≡ Neutral; Grieve ≡ Port-city North; Home to artisans, merchants and laborers, and the alchemists who discovered the White Elixir. The White Elixir grants a macabre immortality, preserving body and soul in the instant of death. Grieve’s richest citizens who have procured the Elixir are recognizable by their unusual pallor and the parasols they employ to ward off the sun. Foreigners arrive in increasing numbers to purchase immortality, trade in the Elixir’s reagents, or seek wealth."
+    "keys": "malfeas",
+    "entry": "Malfeas AKA Hell: nightmarish kingdom of brass & obsidian under sickening green sky Malfeas sits outside Creation surrounded by endless desert at end of eternity it imprisons yozis with demon legions since vanquished by Exalted"
   },
   {
     "hidden": false,
-    "keys": "lookshy#[l=3]",
-    "entry": "Lookshy ≡ Great city in the East that dates back to the Shogunate. It is home to the Seventh Legion, the pre-eminent military power in the Scavenger Lands. The still possess some few craftsmen who can maintain the store of First Age weapons. Visitors cannot enter the Upper City without authorization."
+    "keys": "blessed isle",
+    "entry": "'The Blessed Isle': great island-continent center of Creation it once home of gods and now seat of the Realm; very center Pole of Earth pierces heavens as 'The Imperial Mountain'"
   },
   {
     "hidden": false,
-    "keys": "sijan#[l=3]",
-    "entry": "Sijan ≡ Great tomb-city on the edge of a shadowland in the East. Funaralists here are familiar with all rites and rituals related to death, but their ultimate service is to ensure the ghosts of the deceased retain wealth and status. Great treasures are entombed in the necropoli, protected by traps and guardians. Liminal Exalted have an alliance with Sijan."
+    "keys": "pole of earth",
+    "entry": "'The Pole of Earth': axis of Creation around which world moves it dormant and steady balancing elements of Creation into stable harmony in each directional away another pole’s influence grows stronger until reality is ripped away"
   },
   {
     "hidden": false,
-    "keys": "(heaven|yu-shan)#[l=3]",
-    "entry": "Yu-Shan ≡ Heaven. The celestial city of Yu-Shan is home to the gods and the Incarnae who oversee the management of Heaven, Creation, and fate through a grand bureaucracy. Of the Exalted, only the Sidereal Exalted call it home."
+    "keys": "orichalcum",
+    "entry": "orichalcum: magical material, superheavy gold attuned Solar Exalted"
   },
   {
     "hidden": false,
-    "keys": "underworld#[l=3]",
-    "entry": "Underworld ≡ The lands of the dead, floating on the sea of the void, the Underworld is a shattered reflection of Creation and a capstone over the tombs of the Neverborn. Those who die and are unable to move on become trapped in the Underworld, where the souls and Essence of dead things have congregated, giving rise to malady and horror. This is where the Deathlords keep their kingdoms. They have built their fortresses into Creation; in every direction, the spires of a Deathlord’s citadel peers out."
+    "keys": "moonsilver",
+    "entry": "moonsilver: magical material, fluidic silver attuned Lunar Exalted"
   },
   {
     "hidden": false,
-    "keys": "shadowland#[l=3]",
-    "entry": "Shadowland ≡ Where the Underworld touches Creation; Places where no barrier exists between life and death, and the living may treat with the dead. Those who leave a shadowland during the day find themselves in Creation, while those who leave its borders at night enter the Underworld."
+    "keys": "jade",
+    "entry": "jade: magical material, stone attuned dragon-blooded"
   },
   {
     "hidden": false,
-    "keys": "scavenger lands#[l=3]",
-    "entry": "Scavenger Lands ≡ The territory in the near East of the Threshold who proclaim independence from the Realm, having resisted multiple invasions. Its heart is the River Province, a region containing a series of mighty, loosely allied city-states lining the mighty rivers that run through the heart of the region."
+    "keys": "starmetal",
+    "entry": "starmetal: magical material, from sky, attuned Sidereal Exalted"
   },
   {
     "hidden": false,
-    "keys": "malfeas#[l=3]",
-    "entry": "Malfeas ≡ Hell. A nightmarish kingdom of brass and obsidian under a sickening green sky. Malfeas sits outside the world, surrounded by an endless desert at the ends of eternity. The Yozis were imprisoned here with their demon legions after being vanquished by the Exalted. When a demon is summoned from Malfeas by a sorcerer, it may cross the sands of eternity in just five days, departing five days in advance of the sorcerer’s call."
+    "keys": "soulsteel",
+    "entry": "soulsteel: magical material, from Underworld, attuned Abyssal Exalted"
   },
   {
-    "hidden": false,
-    "keys": "blessed isle#[l=3]",
-    "entry": "Blessed Isle ≡ The great island-continent at the center of Creation, once the home of the gods and now the homeland of the Realm. At the center of the world, the Pole of Earth pierces the heavens in the form of the Imperial Mountain. The Pole of Earth is the axis of Creation, around which the world moves. It is dormant and steady, balancing the elements of Creation into a stable harmony. As one travels away from the Pole of Earth, the directional pole’s influence grows stronger until reality is ripped away."
-  },
-  {
-    "hidden": false,
-    "keys": "(daiklave|artifact|magical material|orichalcum)#[l=3]",
-    "entry": "orichalcum ≡ magical material, superheavy gold attuned Solar Exalted"
-  },
-  {
-    "hidden": false,
-    "keys": "(daiklave|artifact|magical material|moonsilver)#[l=3]",
-    "entry": "moonsilver ≡ magical material, fluidic silver attuned Lunar Exalted"
-  },
-  {
-    "hidden": false,
-    "keys": "(daiklave|artifact|magical material|jade)#[l=3]",
-    "entry": "jade ≡ magical material, stone attuned dragon-blooded"
-  },
-  {
-    "hidden": false,
-    "keys": "(daiklave|artifact|magical material|starmetal)#[l=3]",
-    "entry": "starmetal ≡ magical material, from sky, attuned Sidereal Exalted"
-  },
-  {
-    "hidden": false,
-    "keys": "(daiklave|artifact|magical material|soulsteel)#[l=3]",
-    "entry": "soulsteel ≡ magical material, from Underworld, attuned Abyssal Exalted"
-  },
-  {
-    "keys": "(charm|magic|essence|flare),(anima|aura)#[l=5]",
-    "entry": "Exalt uses Essence⇒ anima{flares,visible}; more essence⇒ larger display>>>>\n<<Solar⇒ white or gold; Abyssal⇒ blackish-purple glow; Lunar⇒ silver animal shape; Dragon-Blood⇒ aspect element",
+    "keys": "anima flare",
+    "entry": "anima flare: visible display of essence usage by Exalts",
     "hidden": false
   },
   {
-    "keys": "_whiteList",
-    "entry": "_synonyms",
+    "keys": "Excellent Strike",
+    "entry": "Charm:Excellent Strike: A very accurate attack. {Solar, Abyssal, Lunar,Sidereal,Terrestrial; Melee}",
     "hidden": false
   },
   {
-    "keys": "Excellent Strike#[l=3]",
-    "entry": "Charm:Excellent Strike ≡ A very accurate attack. {Solar, Abyssal, Lunar,Sidereal,Terrestrial; Melee}",
+    "keys": "Fire and Stone Strike",
+    "entry": "Charm:Fire and Stone Strike: An attack that channels essence into fire through a melee weapon. {Solar; Melee}",
     "hidden": false
   },
   {
-    "keys": "Fire and Stone Strike#[l=3]",
-    "entry": "Charm:Fire and Stone Strike ≡ An attack that channels essence into fire through a melee weapon. {Solar; Melee}",
+    "keys": "Peony Blossom Attack",
+    "entry": "Charm:Peony Blossom Attack: Instant additional attack. {Solar; Melee}",
     "hidden": false
   },
   {
-    "keys": "Peony Blossom Attack#[l=3]",
-    "entry": "Charm:Peony Blossom Attack ≡ Instant additional attack. {Solar; Melee}",
+    "keys": "Dipping Swallow Defense",
+    "entry": "Charm:Dipping Swallow Defense: Very powerful parry. {Solar; Melee}",
     "hidden": false
   },
   {
-    "keys": "(parry|Dipping Swallow Defense)#[l=3]",
-    "entry": "Charm:Dipping Swallow Defense ≡ Very powerful parry. {Solar; Melee}",
+    "keys": "Bulwark Stance",
+    "entry": "Charm:Bulwark Stance: For a single turn, you attempt a parry and reduce the damage of all incoming attacks. {Solar; Melee}",
     "hidden": false
   },
   {
-    "keys": "(parry|Bulwark Stance)#[l=3]",
-    "entry": "Charm:Bulwark Stance ≡ For a single turn, you attempt a parry and reduce the damage of all incoming attacks. {Solar; Melee}",
+    "keys": "War Lion Stance",
+    "entry": "Charm:War Lion Stance: You choose another person then for the rest of combat you can attempt to parry any attacks directed at that person. {Solar; Melee}",
     "hidden": false
   },
   {
-    "keys": "(parry|War Lion Stance)#[l=6S=10]",
-    "entry": "Charm:War Lion Stance ≡ You choose another person then for the rest of combat you can attempt to parry any attacks directed at that person. {Solar; Melee}",
+    "keys": "Guard-Breaking Technique",
+    "entry": "Charm:Guard-Breaking Technique: Execute a feint and then strike a powerful blow. {Solar; Melee}",
     "hidden": false
   },
   {
-    "keys": "(feint|Guard-Breaking Technique)#[l=3]",
-    "entry": "Charm:Guard-Breaking Technique ≡ Execute a feint and then strike a powerful blow. {Solar; Melee}",
+    "keys": "Counterattack",
+    "entry": "Charm:Solar Counterattack: When parrying, the Exalt may launch an immediate counterattack before any damage is sustained. This counterattack does not prevent damage from the incoming attack. {Solar; Melee}",
     "hidden": false
   },
   {
-    "keys": "Counterattack#[l=3]",
-    "entry": "Charm:Solar Counterattack ≡ When parrying, the Exalt may launch an immediate counterattack before any damage is sustained. This counterattack does not prevent damage from the incoming attack. {Solar; Melee}",
-    "hidden": false
-  },
-  {
-    "keys": "(strike|Rising Sun Slash)#[l=3]",
-    "entry": "Charm: Rising Sun Slash ≡ A powerful leaping attack which channels an inexorable flow of Essence through the weapon, greatly boosting the speed and ferocity of the attack. {Solar; Melee}",
+    "keys": "Rising Sun Slash",
+    "entry": "Charm: Rising Sun Slash: A powerful leaping attack which channels an inexorable flow of Essence through the weapon, greatly boosting the speed and ferocity of the attack. {Solar; Melee}",
     "hidden": false
   }
 ]
