@@ -1,4 +1,4 @@
-(function() {
+(() => {
     SimpleContextPlugin.prototype.commandHandlerPreClearwi = SimpleContextPlugin.prototype.commandHandler;
     SimpleContextPlugin.prototype.commandHandler = function(text) {
         // do something additional
