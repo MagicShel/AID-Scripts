@@ -65,7 +65,7 @@ if ( !cmpTokens ( fl.tokenizeInput("< 'do this' test >"),["<","'do this'","test"
 if ( !cmpTokens ( fl.tokenize('tokenize'),["token","ize"] ) ) throw 'tokenize fail';
 
 // Execution
-let prefix = "●";
+let prefix = "•";
 let suffix = "";
 let input = process.argv.slice(2).join(' ');
 let fileRegEx = /^(?:-f|--file)\s(.*)/;
@@ -87,7 +87,10 @@ if ( matches && matches[1]) { // Process file
 		worldEntries.filter(e => !e.hidden).forEach(e => {
 			countCharsOld += e.entry.length;
 			countTokensOld += fl.tokenize(e.entry).length;
-			e.entry = fl.smash(prefix + " " + e.entry + " " + suffix); countUpdated++
+			let _prefix = e.entry.startsWith(prefix) ? "" : prefix;
+			let _suffix = e.entry.endsWith(suffix) ? "" : suffix;
+			e.entry = fl.smash(_prefix + " " + e.entry + " " + _suffix);
+			countUpdated++;
 			e.hidden = true;
 			countCharsNew += e.entry.length;
 			countTokensNew += fl.tokenize(e.entry).length;
@@ -102,7 +105,9 @@ if ( matches && matches[1]) { // Process file
 		console.log(`tokens old/new: ${countTokensOld}/${countTokensNew}`);
 	});
 } else { // Process input
-	let output = fl.smash(prefix + " " + input + " " + suffix);
+	let _prefix = e.entry.startsWith(prefix) ? "" : prefix;
+	let _suffix = e.entry.endsWith(suffix) ? "" : suffix;
+	let output = fl.smash(_prefix + " " + e.entry + " " + _suffix);
 	let count = fl.tokenize(output).length;
 	console.log(output);
 	console.log(`Tokens: ${count}`);
